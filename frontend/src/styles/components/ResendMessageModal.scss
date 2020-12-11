@@ -1,0 +1,79 @@
+
+$titleColor: #363636;
+
+
+#resendMessageModal {
+    .modal-dialog {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .modal-content {
+        min-height: 420px;
+    }
+}
+
+#resendMessageModal {
+    .resend-message-title {
+        font-size: 19px;
+        color: $titleColor
+    }
+    .title-h5 {
+        font-size: 13px;
+        color: $titleColor
+    }
+
+    .message-resend {
+        border-left: 2px solid $grey;
+        p {
+            color: #202020;
+            font-size: 13px;
+        }
+    }
+    .multiselect__tags,
+    .resend-message-row{
+        border-radius: 0;
+        border: 0;
+        padding-left: 0;
+        border-bottom: 1px solid #E8E8E8;
+    }
+    .multiselect__tag {
+        background-color: #F7F8FC;
+        color: #747A8C;
+
+        &-icon:hover {
+            background-color: $iconHoverColor;
+        }
+
+        &-icon,
+        &-icon:after {
+            color: #CDD4E8;
+        }
+    }
+
+    .multiselect__option--highlight{
+        background-color: $bgHover;
+    }
+    .multiselect__option--selected {
+        background-color: $grey;
+    }
+
+    .plz-btn-primary {
+        transition: .4s;
+        &:hover {
+            background-color: $iconHoverColor;
+        }
+    }
+
+}
+
+#forwardMessageEditor {
+    .forward-message-width {
+        flex: auto;
+        width: calc(100% - 120px);
+    }
+    .forward-attach-width {
+        min-width: 120px;
+    }
+}
+

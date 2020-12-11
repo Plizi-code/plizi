@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <meta name="description" content="Социальная сеть нового поколения, для Вас и Ваших близких.">
+    <meta name="keywords" content="Социальная сеть" />
+    <meta property="og:title" content="Социальная сеть нового поколения, для Вас и Ваших близких." />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="Социальная сеть нового поколения, для Вас и Ваших близких." />
+    <meta property="og:image" content="./favicons/android-chrome-256x256.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="256" />
+    <meta property="og:image:height" content="256" />
+    <meta property="twitter:description" content="Социальная сеть нового поколения, для Вас и Ваших близких." />
+
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon-180x180.png" />
+
+    <link rel="icon" sizes="36x36" type="image/png" href="./favicons/android-chrome-36x36.png" />
+    <link rel="icon" sizes="72x72" type="image/png" href="./favicons/android-chrome-72x72.png" />
+    <link rel="icon" sizes="144x144" type="image/png" href="./favicons/android-chrome-144x144.png" />
+    <link rel="icon" sizes="256x256" type="image/png" href="./favicons/android-chrome-256x256.png" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png" />
+
+    <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="./favicons/favicon.ico" />
+
+    <!-- Library Styles -->
+    <link rel="stylesheet" href="./css/bootstrap-4.3.1.min.css" />
+    <link rel="stylesheet" href="./font-awesome/css/all.css" />
+
+    <!-- Library JS -->
+    <script src="./js/jquery-3.3.1.min.js" type="application/javascript"></script>
+    <script src="./js/popper-2.3.3.min.js" type="application/javascript"></script>
+    <script src="./js/bootstrap-4.3.1.min.js" type="application/javascript"></script>
+    <script src="./js/autobahn.min.js" type="application/javascript"></script>
+
+    <title>Plizi</title>
+</head>
+<body>
+
+<div id="app"></div>
+
+</body>
+</html>

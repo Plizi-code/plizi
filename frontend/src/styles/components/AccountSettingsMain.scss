@@ -1,0 +1,249 @@
+
+
+$titleColor: #363636;
+
+#accountSettingsMain {
+    .title-settings {
+        font-size: 14px;
+        font-weight: 600;
+        color: $titleColor;
+    }
+}
+
+.plz-account-settings {
+    padding: 29px 30px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+
+    .form-group {
+        margin-bottom: 0;
+        padding: 8px 0;
+
+        .invalid-feedback {
+            width: 100%;
+            //margin-left: 15px;
+            //width: 40%;
+            //align-items: center;
+
+            .text-danger {
+                margin-bottom: 0;
+            }
+        }
+
+        .is-invalid ~ .invalid-feedback {
+            display: flex;
+        }
+    }
+
+    &-header {
+        padding-bottom: 27px;
+
+        h6 {
+            color: #363636;
+            font-size: 14px;
+        }
+    }
+
+    &-body {
+
+        &-label {
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            color: #9a9a9a;
+            font-size: 13px;
+            padding-left: 0;
+        }
+
+        &-field {
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+
+            .form-control,
+            .form-control-plaintext {
+                color: #363636;
+                font-size: 13px;
+                box-shadow: none;
+                border: 0;
+                outline: none;
+                border-bottom: 1px solid $borderColor;
+                border-radius: 0;
+                &[readonly="readonly"] {
+                    border-bottom: 1px solid transparent;
+                }
+
+                &.relationshipUsers {
+                    .multiselect__tags {
+                        padding: 0;
+                    }
+                }
+
+                .multiselect__single {
+                    margin-bottom: 0;
+                    line-height: 30px;
+                }
+                .multiselect__tags {
+                    border: none;
+                }
+
+                .multiselect__option--highlight {
+                    background: #576DF6;
+                }
+            }
+
+            textarea.form-control-plaintext[readonly="readonly"] {
+                height: 32px;
+                border-color: $borderColor;
+                border-bottom: 1px solid $borderColor;
+            }
+            textarea.form-control{
+                padding-left: 10px;
+                border: 1px solid $borderColor;
+                &.is-valid{
+                    box-shadow: none;
+                }
+            }
+
+            select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                -o-appearance: none;
+                color: #212529 !important;
+            }
+
+            a {
+                font-size: 13px;
+                text-decoration: underline;
+                color: inherit;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            .fa,
+            .fas {
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+                pointer-events: none;
+                font-size: 10px;
+                color: $placeholderColor;
+                background-color: #ffffff;
+            }
+
+            .fa-lock,
+            .fa-check {
+                right: auto;
+                left: 0;
+            }
+            .fa-map-marker-alt {
+                right: auto;
+                left: 15px;
+            }
+        }
+
+        &-action {
+            text-align: right;
+            padding-right: 0;
+            justify-content: flex-end;
+
+            button, a {
+                color: #9a9a9a!important;
+                font-size: 13px;
+                padding-right: 0;
+                text-decoration: none;
+            }
+
+            a {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        $height: 30px;
+
+        .multiselect{
+            min-height: $height;
+            height: auto;
+
+            &__placeholder {
+                margin: 0;
+                padding-top: .5rem;
+                font-size: $placeholderSize;
+                color: $placeholderColor;
+                white-space: nowrap;
+                width: 100%;
+                overflow: hidden;
+            }
+            &__input {
+                background-color: #fff;
+
+                &::placeholder {
+                    font-size: $placeholderSize;
+                    color: $placeholderColor;
+                }
+            }
+            &__tags {
+                padding-top: 0;
+                min-height: $height;
+            }
+
+            &__option {
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+                min-height: 30px;
+            }
+            &__select {
+                height: 30px;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: 15px;
+                    tranform: translateY(-50%);
+                    width: 10px;
+                    height: 5px;
+                    margin: 0;
+                    background: url('../images/icon-shewron.png') 50% 50% no-repeat;
+                    background-size: 10px 5px;
+                    border: 0;
+                    transform-origin: 50% 50%;
+                }
+
+            }
+            &__single {
+                font-size: 13px;
+            }
+            &__content-wrapper {
+                transform: translateX(-15px);
+                //padding-left: 20px;
+                width: auto;
+                min-width: 100%;
+                box-shadow: 0 0 4px 0 rgba(51, 51, 51, .3);
+            }
+        }
+
+        .btn-save {
+            font-size: 11px;
+            box-shadow: 0 5px 18px rgba(61, 81, 222, .4);
+            transition: .4s;
+
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .plz-prepend-w140 {
+        width: 140px;
+
+        & + input {
+            width: calc(100% - 145px);
+        }
+    }
+}

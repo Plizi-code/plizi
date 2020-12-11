@@ -1,0 +1,212 @@
+
+$holderPicSize: 48px;
+$usersPicSize: 32px;
+
+.plz-gallery-description {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    width: 30%;
+    right: 0;
+    height: 100%;
+    background: #FFFFFF;
+    overflow-y: scroll;
+
+    .plz-comment-item-data-info {
+        .plz-gallery-portrait.plz-gallery-fourth {
+            flex-direction: row;
+            height: 500px;
+            img {
+                width: 160px;
+                height: 250px;
+            }
+        }
+    }
+
+    .plz-gallery-portrait {
+        flex-direction: column;
+        height: auto;
+        img {
+            width: 100%;
+            height: 250px;
+        }
+    }
+
+    .plz-comment-item-data-info {
+        .plz-gallery-album.plz-gallery-single,
+        .plz-gallery-album.plz-gallery-double,
+        .plz-gallery-album.plz-gallery-triple {
+            .plz-gallery-wrapper {
+                img {
+                    height: 160px;
+                }
+            }
+        }
+        .plz-gallery-album.plz-gallery-fifth, .plz-gallery-album.plz-gallery-fourth {
+            height: 100%;
+            .plz-gallery-image-mores {
+                &:before {
+                    font-size: 18px;
+                }
+            }
+            .plz-gallery-wrapper {
+                img {
+                    height: 120px;
+                }
+            }
+        }
+    }
+
+    .plz-gallery-album {
+        height: auto;
+    }
+
+    &-header-body {
+        .plz-gallery-description--footer {
+        .plz-text-editor {
+            div {
+                .plz-attachment-images-list {
+                    li {
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+            }
+        }
+    }
+    .usersLikes {
+        right: 0;
+
+        &-user {
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+
+    .picker {
+        top: -180px;
+        left: -160px;
+        height: 170px;
+        width: 250px;
+    }
+
+    .twemoji {
+        max-width: 100%;
+        object-fit: contain;
+        height: 20px;
+    }
+
+    &--holder {
+        width: 100%;
+
+        &-surname {
+           // margin-left: 10px !important;
+        }
+        &-data {
+            text-align: left;
+
+            &-author {
+                display: flex;
+                font-size: 14px;
+                color: $postTextColor;
+            }
+            &-time {
+                color: $textGreyColor;
+                font-size: 13px;
+            }
+        }
+        &-avatar {
+            position: relative;
+            display: inline-block;
+            width: $holderPicSize;
+            min-width: $holderPicSize;
+            height: $holderPicSize;
+            border-radius: 50%;
+            overflow: hidden;
+
+            &-item {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: 100%;
+                transform: translate(-50%, -50%);
+                object-fit: contain;
+            }
+        }
+
+    }
+
+    .plz-gallery-description--footer-img,
+    .plz-gallery-description--holder-avatar-item {
+        height: 100%;
+    }
+
+    &--post {
+        &-data {
+            width: 100%;
+            height: 50px;
+            &-option {
+                display: flex;
+                align-items: center;
+                > svg {
+                    width: 30px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+    &-body {
+
+    }
+    &--footer {
+        &-pic {
+            position: relative;
+            width: $usersPicSize;
+            min-width: $usersPicSize;
+            height: $usersPicSize;
+            border-radius: 50%;
+            overflow: hidden;
+
+        }
+        &-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-height: 100%;
+            object-fit: contain;
+        }
+
+        .plz-text-editor {
+            max-width: calc( 100% - 30px);
+        }
+    }
+    &-comment {
+        &-wrapper {
+
+        }
+
+        &-item {
+            margin: 0 auto;
+            width: 100%;
+            &:last-child {
+                padding-bottom: 80px;
+            }
+            &:first-child {
+                border-top: 1px solid #e1e1e1;
+                width: 100%;
+            }
+        }
+    }
+    &-write-comment {
+        position: fixed;
+        bottom: 0;
+        background: #ffffff;
+        max-width: 30%;
+    }
+}

@@ -1,0 +1,28 @@
+#postFilter,
+#friendsListSearch {
+    .btn-search {
+        position: absolute;
+        top: 0;
+        right: 4px;
+        bottom: 0;
+    }
+}
+
+#friendsListFilter {
+    .profile-filter-links {
+       .nav-link {
+           border: 0;
+           &.active {
+               &:after {
+                   content: '';
+                   position: absolute;
+                   bottom: -2px;
+                   left: 0;
+                   right: 0;
+                   height: 3px;
+                   background-color: $iconHoverColor;
+               }
+           }
+       }
+    }
+}

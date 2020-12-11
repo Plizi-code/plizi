@@ -1,0 +1,78 @@
+.post-news-item{
+    .nav-item a {
+        &:hover {
+            background-color: transparent;
+            color: $grey;
+        }
+    }
+}
+
+// Касается модалки при репосте поста // :TODO перенести в файл со стилями того компонента
+
+.post-repost-item {
+    overflow: scroll;
+}
+
+.post-settings {
+    height: 30px;
+}
+
+.plz-post-item {
+    .plz-post-item-header,
+    .plz-post-item-body,
+    .plz-post-item-images,
+    .plz-post-item-footer {
+        padding: 0 35px 0 39px;
+    }
+}
+
+.post-images {
+    img {
+        max-width: 100%;
+        border-radius: 3px;
+
+    }
+}
+
+.sharedFrom {
+    width: 100%;
+
+    .post-poster-pic {
+        a {
+            display: block;
+        }
+    }
+
+}
+
+.youtube-video-link {
+    .post-main-text {
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            & + .video__button .video__button-shape {
+                fill: #ff0000;
+                fill-opacity: 1;
+            }
+        }
+    }
+}
+.multiselect {
+    &__select {
+        &:before {
+            top: 74%;
+        }
+    }
+    &__option {
+        &--highlight {
+            & > span {
+                line-height: 40px;
+                padding-left: 15px;
+            }
+        }
+        &--selected {
+            color: #000 !important;
+            background-color: #fff !important;
+        }
+    }
+}

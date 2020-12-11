@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: front-nginx-ingress
+  labels:
+    name: front-nginx
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  tls:
+  - hosts:
+    - __RENAME_DOMAIN__
+    secretName: __RENAME_DOMAIN__-tls
+  rules:
+  - host: __RENAME_DOMAIN__
+    http:
+      paths:
+      - path: "/"
+        backend:
+          serviceName: front-nginx-service
+          servicePort: 80

@@ -1,0 +1,32 @@
+.plz-recover-pass-form-wrapper {
+    img {
+        width: 100%;
+        max-width: 138px;
+    }
+    h5 {
+        font-size: 24px;
+    }
+
+    #recoverPassBtn {
+        margin-top: 26px;
+        box-shadow: 0 5px 18px rgba(61, 81, 222, .4);
+        font-size: 11px;
+        font-weight: 700;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+#recoverPassInput {
+    padding: 0 6px;
+    color: #363636;
+
+    &:focus {
+        border-color: #363636;
+    }
+
+    &::placeholder {
+        font-size: $placeholderSize;
+        color: $placeholderColor;
+    }
+}

@@ -1,0 +1,21 @@
+# Editor directories and files
+.idea
+.vs
+/*/*.psd
+
+# windows thumbnail cache
+Thumbs.db
+
+/*/*.bak
+/dev_deploy.sh
+/stage_deploy.sh
+
+# local dicker file
+/docker-compose.local.yml
+
+
+mysql_data_plizi
+mysql8_data_plizi
+mongodb_data_plizi
+redis_data_plizi
+neo4j-persistence

@@ -1,0 +1,19 @@
+
+#toolbarLeftGrey {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -23px;
+        left: 50%;
+        width: 6px;
+        height: 6px;
+        margin-left: -3px;
+        background-color: #cbd0e2;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+    }
+}
+

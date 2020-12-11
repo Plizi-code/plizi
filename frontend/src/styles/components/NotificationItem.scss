@@ -1,0 +1,166 @@
+$notificationUserPicSize: 48px;
+$notificationStatusSize: 22px;
+$notificationDescColor: #9A9A9A;
+$notificationTimeColor: #bab8b8;
+$notificationNameColor: #363636;
+$notificationOnlineColor: #9FCD48;
+$notificationOfflineColor: #CACAC9;
+$maxTextWidth: 130px;
+$notificationPicSize: 50px;
+
+.plizi-notification-item-user,
+.plizi-invitation-item {
+    transition: .4s;
+    //min-width: 400px;  //del for header notification IphooneX
+
+    .user-friend-desc {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.plizi-notification-item,
+.plizi-invitation-item {
+    &-pic {
+        display: inline-block;
+        position: relative;
+        height: $notificationUserPicSize;
+        width: $notificationUserPicSize;
+
+        img {
+            display: inline-block;
+            width: $notificationUserPicSize;
+            height: $notificationUserPicSize;
+        }
+
+        &-status {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: $notificationStatusSize;
+            height: $notificationStatusSize;
+            border-radius: $notificationStatusSize;
+            transform: translate(2px, 2px);
+            background-color: #fb3e3e;
+            text-align: center;
+
+            .fa,
+            .fas {
+                line-height: $notificationStatusSize;
+                color: #fff;
+                font-size: 10px;
+            }
+        }
+    }
+
+    &-isonline {
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: 0;
+        bottom: 0;
+        background-color: $notificationOnlineColor;
+        border: 1px solid white;
+        border-radius: 100%;
+    }
+
+    &-isoffline {
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: 0;
+        bottom: 0;
+        background-color: $notificationOfflineColor;
+        border: 1px solid white;
+        border-radius: 100%;
+    }
+
+    &-body {
+        max-width: calc(100% - 120px);
+
+        &-top {
+            time {
+                font-size: 11px;
+                color: $notificationTimeColor; // add color to var
+            }
+
+        }
+    }
+
+    &-name {
+        font-size: 13px;
+        font-weight: 600;
+        color: $notificationNameColor;
+        line-height: 20px;
+        cursor: pointer;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        //max-width: $maxTextWidth; //@TGA зачем тут был max-width ?
+
+        &:hover {
+            text-decoration: underline;
+            color: $notificationTimeColor;
+        }
+    }
+
+    &-desc {
+        font-size: 12px;
+        color: $notificationDescColor;
+    }
+
+    &-subdesc {
+        font-size: 11px;
+        color: $notificationTimeColor;
+    }
+
+    &-details {
+        font-size: 12px;
+        color: $notificationNameColor;
+    }
+    &-point {
+        position: relative;
+        width: $notificationPicSize;
+        height: $notificationPicSize;
+        border-radius: 2px;
+        overflow: hidden;
+        img,
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+    }
+
+    a {
+        color: $iconHoverColor;
+    }
+
+}
+
+.notifications-likes-scroll {
+    height: auto;
+    max-height: calc(100vh - 140px);
+    width: 460px;
+    max-width: 100vw;
+    overflow: auto;
+
+    .ps__rail-y {
+        opacity: 1;
+        width: 10px;
+        height: 500px;
+        background-color: #f8f9fa;
+        box-shadow: inset 0 0 1px 2px rgba(0, 0, 0, 0.02);
+
+        &:hover > .ps__thumb-y {
+            background-color: #999;
+            width: 6px;
+        }
+    }
+}
+
+

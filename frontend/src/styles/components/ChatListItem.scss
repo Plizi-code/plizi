@@ -1,0 +1,209 @@
+$userPicSize: 32px;
+
+.find-in-chat-list {
+    &-btn {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+#txtFindInChatList {
+    color: #A3A8B9;
+    height: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    background-color: #EEEFF4;
+    border-radius: 20px;
+    border-width: 0;
+    padding: 0 30px;
+    line-height: 20px;
+    outline: none;
+    box-shadow: none;
+    transition: .4s;
+
+    &::placeholder {
+        font-size: $placeholderSize;
+        color: $placeholderColor;
+    }
+
+    &:focus {
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+}
+
+.chat-dialogs-list {
+    border-right: 1px solid $borderColor;
+
+    .chat-list-scroll {
+        //height: calc(100% - 76px);
+
+        &-scroll {
+            position: relative;
+            max-height: 100%;
+        }
+    }
+
+    > .find-in-dialogs-form {
+        height: 76px;
+        min-height: 76px;
+
+        .find-in-chat-list {
+            width: calc(100% - 36px - 15px);
+
+            &-btn {
+                background-color: #eeeff4;
+                border-radius: 0 40px 40px 0;
+
+                .icon.icon-search {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+
+    .btn-group-chat {
+        position: relative;
+        width: 36px;
+        min-width: 36px;
+        height: 36px;
+        border: 1px solid $borderColor;
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.chat-list-user {
+    transition: .4s;
+    &:hover {
+        background-color: #e6e7eb !important;
+    }
+
+    .user-friend-desc {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .user-friend-body {
+        width: calc(100% - 32px - 15px);
+    }
+    .user-friend-body-top {
+        width: 100%;
+    }
+}
+
+.user-friend {
+    cursor: pointer;
+
+    &-pic {
+        display: inline-block;
+        position: relative;
+        height: $userPicSize;
+        width: $userPicSize;
+        border-radius: $userPicSize;
+        background-color: #fff;
+        box-shadow: 0 0 2px 1px #fff, 0 0 3px 0 #333;
+
+        img {
+            display: inline-block;
+            width: $userPicSize;
+            height: $userPicSize;
+        }
+    }
+
+    &-isonline {
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: 0;
+        bottom: 0;
+        background-color: #9fcd48;
+        border: 1px solid #fff;
+        border-radius: 100%;
+    }
+    &-isoffline {
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: 0;
+        bottom: 0;
+        background-color: #cacac9;
+        border: 1px solid #fff;
+        border-radius: 100%;
+    }
+
+    &-body {
+        &-top {
+            time {
+                font-size: 11px;
+                color: #9a9a9a;// add color to var // @TGA - так Серёжа и не добавил :(
+            }
+
+            .fa-check-double {
+                margin: 0;
+                transform: translateY(-5px);
+            }
+        }
+    }
+
+    &-name {
+        font-size: 13px;
+        font-weight: 600;
+        color: #363636;
+        line-height: 20px;
+        cursor: pointer;
+
+        &.group-chat-name {
+            color: #6983c7;
+        }
+
+        &:hover{
+            text-decoration: underline;
+            color: #9a9a9a;
+        }
+    }
+
+    &-desc {
+        font-size: 12px;
+        color: #9a9a9a;
+    }
+
+    &-details {
+        font-size: 12px;
+        color: #363636;
+    }
+
+    .is-group-chat {
+        width: $userPicSize;
+        min-width: $userPicSize;
+
+        .user-friend-pic {
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 2px 2px #fff, 0 0 3px 0 #333;
+            transition: .4s;
+
+            &:nth-child(1) {
+                transform: translateX(-15%);
+            }
+            &:nth-child(2) {
+                transform: translateX(15%);
+            }
+            &:hover {
+                z-index: 1;
+            }
+        }
+    }
+
+}

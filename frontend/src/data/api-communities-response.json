@@ -1,0 +1,296 @@
+[
+    {
+        "id": 1,
+        "name": "Между тем три.",
+        "notice": "Издали послышался.",
+        "primaryImage": "https://lorempixel.com/640/480/people/",
+        "url": "",
+        "website": "http://doronin.com/",
+        "location": "Лотошино, Суринам",
+        "totalUsers": 704,
+        "role": null,
+        "members": {
+            "list": [
+                {
+                    "id": "5eafb04e7ee1180281337a81",
+                    "isOnline": false,
+                    "role": "user",
+                    "profile": {
+                        "firstName": "Марианка",
+                        "lastName": "Кабанова",
+                        "sex": "n",
+                        "birthday": "1967-05-14",
+                        "location": null,
+                        "relationshipId": null,
+                        "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/Sx3zRic44zm2mPiMUahypL3hlKw8SuwBsKtm11Jb.png"
+                    }
+                },
+                {
+                    "id": "5eafb04e7ee1180281337a82",
+                    "isOnline": false,
+                    "role": "author",
+                    "profile": {
+                        "firstName": "Полина",
+                        "lastName": "Дорожинa",
+                        "sex": "n",
+                        "birthday": "1956-05-10",
+                        "location": null,
+                        "relationshipId": null,
+                        "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/SItquBplqCQoH6JmpNN6FchszxNfOcaZQl2ZkV9e.png"
+                    }
+                },
+                {
+                    "id": "5eafb04e7ee1180281337a83",
+                    "isOnline": false,
+                    "role": "user",
+                    "profile": {
+                        "firstName": "Виктория",
+                        "lastName": "Мамонтовa",
+                        "sex": "n",
+                        "birthday": "1963-09-07",
+                        "location": null,
+                        "relationshipId": null,
+                        "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/yT02AkTe3lJH0HGvvY8Y028LGVxaKUqz9rW40S6o.jpeg"
+                    }
+                },
+                {
+                    "id": "5eafb04e7ee1180281337a84",
+                    "isOnline": false,
+                    "role": "user",
+                    "profile": {
+                        "firstName": "Алёна",
+                        "lastName": "Евсеевa",
+                        "sex": "n",
+                        "birthday": "1973-04-20",
+                        "location": null,
+                        "relationshipId": null,
+                        "userPic": "https://i.picsum.photos/id/345/500/500.jpg"
+                    }
+                },
+                {
+                    "id": "5eafb04e7ee1180281337a85",
+                    "isOnline": false,
+                    "role": "user",
+                    "profile": {
+                        "firstName": "Никодим",
+                        "lastName": "Соколов",
+                        "sex": "m",
+                        "birthday": "1951-12-05",
+                        "location": null,
+                        "relationshipId": null,
+                        "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/FbC98UtLAAkJa4Go8BbqXgAUaCnRx2VjmKohwW6V.png"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "name": "Ты за столом.",
+        "notice": "Ну, да изволь, я.",
+        "primaryImage": "https://lorempixel.com/640/480/people/",
+        "url": "",
+        "website": "http://www.doronin.ru/mollitia-sed-nostrum-voluptas-iste-magni-aliquid-et",
+        "location": "Серебряные Пруды, Монтсеррат",
+        "totalUsers": 704,
+        "role": null,
+        "members": {
+            "list": [
+                {
+                    "id": "5eafb04e7ee1180281337a81",
+                    "isOnline": false,
+                    "role": "user",
+                    "profile": {
+                        "firstName": "Марианка",
+                        "lastName": "Кабанова",
+                        "sex": "n",
+                        "birthday": "1967-05-14",
+                        "location": null,
+                        "relationshipId": null,
+                        "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/Sx3zRic44zm2mPiMUahypL3hlKw8SuwBsKtm11Jb.png"
+                    }
+                },
+                {
+                    "id": "5eafb04e7ee1180281337a82",
+                    "isOnline": false,
+                    "role": "author",
+                    "profile": {
+                        "firstName": "Полина",
+                        "lastName": "Дорожинa",
+                        "sex": "n",
+                        "birthday": "1956-05-10",
+                        "location": null,
+                        "relationshipId": null,
+                        "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/SItquBplqCQoH6JmpNN6FchszxNfOcaZQl2ZkV9e.png"
+                    }
+                },
+                {
+                    "id": "5eafb04e7ee1180281337a83",
+                    "isOnline": false,
+                    "role": "user",
+                    "profile": {
+                        "firstName": "Виктория",
+                        "lastName": "Мамонтовa",
+                        "sex": "n",
+                        "birthday": "1963-09-07",
+                        "location": null,
+                        "relationshipId": null,
+                        "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/yT02AkTe3lJH0HGvvY8Y028LGVxaKUqz9rW40S6o.jpeg"
+                    }
+                },
+                {
+                    "id": "5eafb04e7ee1180281337a84",
+                    "isOnline": false,
+                    "role": "user",
+                    "profile": {
+                        "firstName": "Алёна",
+                        "lastName": "Евсеевa",
+                        "sex": "n",
+                        "birthday": "1973-04-20",
+                        "location": null,
+                        "relationshipId": null,
+                        "userPic": "https://i.picsum.photos/id/345/500/500.jpg"
+                    }
+                },
+                {
+                    "id": "5eafb04e7ee1180281337a85",
+                    "isOnline": false,
+                    "role": "user",
+                    "profile": {
+                        "firstName": "Никодим",
+                        "lastName": "Соколов",
+                        "sex": "m",
+                        "birthday": "1951-12-05",
+                        "location": null,
+                        "relationshipId": null,
+                        "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/FbC98UtLAAkJa4Go8BbqXgAUaCnRx2VjmKohwW6V.png"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "name": "Группа 600",
+        "notice": "Группа 600 нотис",
+        "primaryImage": null,
+        "url": "600group",
+        "website": "http://600.com/",
+        "location": "Остров",
+        "totalUsers": 1,
+        "role": null,
+        "members": {
+            "list": [
+                {
+                    "id": "5eafb0527ee1180281337a96",
+                    "isOnline": false,
+                    "role": "author",
+                    "profile": {
+                        "firstName": "Капитолина",
+                        "lastName": "Быковa",
+                        "sex": "n",
+                        "birthday": "1953-12-04",
+                        "location": null,
+                        "relationshipId": null,
+                        "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/7K5g6bw2nGXnizhA0ZRBqnJ6H2W13aSgSkswOlEA.png"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "name": "Отстрел.ру",
+        "notice": "арма3 сервер",
+        "primaryImage": null,
+        "url": "otstrel_arma3",
+        "website": "https://otstral2.ru",
+        "location": "Альтис",
+        "totalUsers": 2,
+        "role": "user",
+        "members": {
+            "list": [
+                {
+                    "id": "5eafbd21aeb1fd76b010e0d2",
+                    "isOnline": false,
+                    "role": "author",
+                    "profile": {
+                        "firstName": "Alex",
+                        "lastName": "Dnipro",
+                        "sex": "n",
+                        "birthday": null,
+                        "location": {
+                            "id": 650,
+                            "title": {
+                                "ru": "Днепропетровск",
+                                "ua": "Днепропетровск",
+                                "en": "Днепропетровск"
+                            },
+                            "region": {
+                                "id": 1502117,
+                                "title": {
+                                    "ru": "Днепропетровская область",
+                                    "ua": "Дніпропетровська область",
+                                    "en": "Днепропетровская область"
+                                }
+                            },
+                            "country": {
+                                "id": 2,
+                                "title": {
+                                    "ru": "Украина",
+                                    "ua": "Україна",
+                                    "en": "Ukraine"
+                                }
+                            }
+                        },
+                        "relationshipId": null,
+                        "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/Pm3dxnunoyvoY5odjI8NuNtmexvDb3EzCfiEkfk7.png"
+                    }
+                },
+                {
+                    "id": "5eb004a8620024275560ce92",
+                    "isOnline": false,
+                    "role": "user",
+                    "profile": {
+                        "firstName": "Alex",
+                        "lastName": "Targa",
+                        "sex": "n",
+                        "birthday": null,
+                        "location": null,
+                        "relationshipId": null,
+                        "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/qmf3SpRnNVEpIQ3xHlNnWYWgfTN0cgmmXeJO8gjv.png"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "name": "Отстрел.ру",
+        "notice": "Отстрел 2",
+        "primaryImage": null,
+        "url": "otstrel_arma3",
+        "website": "https://otstral2.game",
+        "location": "Таноа",
+        "totalUsers": 1,
+        "role": "author",
+        "members": {
+            "list": [
+                {
+                    "id": "5eb004a8620024275560ce92",
+                    "isOnline": false,
+                    "role": "author",
+                    "profile": {
+                        "firstName": "Alex",
+                        "lastName": "Targa",
+                        "sex": "n",
+                        "birthday": null,
+                        "location": null,
+                        "relationshipId": null,
+                        "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/qmf3SpRnNVEpIQ3xHlNnWYWgfTN0cgmmXeJO8gjv.png"
+                    }
+                }
+            ]
+        }
+    }
+]

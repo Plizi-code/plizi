@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="515.40833mm"
+     height="289.71875mm"
+     viewBox="0 0 515.40833 289.71875"
+   preserveAspectRatio="none"
+   >
+    <path
+       style="fill:#3D51DE;fill-opacity:1;stroke:#3d51de;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0.53453905,225.57406 3.3007813e-7,289.71875 H 515.40833 L 515.36875,7.3018522 C 456.02838,47.386993 409.01195,95.58461 336.48964,117.61866 294.24041,133.64458 200.37816,128.9778 132.29977,149.59968 79.350516,173.34155 61.639966,172.72907 0.53453905,225.57406 Z"
+       id="plizi-blue-wave" />
+</svg>

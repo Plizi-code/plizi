@@ -1,0 +1,24 @@
+
+.profileWhatsNew-textarea {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    border: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    margin: 0;
+    resize: none;
+    color: #333;
+    font-size: 13px;
+    border-radius: 4px;
+
+    &::placeholder {
+        font-size: $placeholderSize;
+        color: $placeholderColor;
+    }
+    &:focus {
+        border: 1px solid #ccc;
+    }
+}

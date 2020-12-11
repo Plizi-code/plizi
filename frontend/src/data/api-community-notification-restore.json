@@ -1,0 +1,160 @@
+[
+    {
+        "id": "f9ce8f67-ad6f-4c2a-8acc-06b90b7c182c",
+        "createdAt": 1589105632,
+        "reedAt": null,
+        "data": {
+            "body": "User {0, string} sent you friend request",
+            "notificationType": "friendships.accepted",
+            "sender": {
+                "id": "5eb3f2e65566227d7440cca1",
+                "firstName": "Кеша",
+                "lastName": "Савельев",
+                "sex": "m",
+                "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/9016ab61-7ff0-4851-8c14-2935a399a1d4.png"
+            }
+        }
+    },
+    {
+        "id": "40243110-6b59-4a57-a60b-362c0129e8a9",
+        "createdAt": 1589104662,
+        "reedAt": null,
+        "data": {
+            "body": "User {0, string} sent you friend request",
+            "notificationType": "friendships.accepted",
+            "sender": {
+                "id": "5eb3f2dd5566227d7440cc83",
+                "firstName": "Виктория",
+                "lastName": "Мамонтовa",
+                "sex": "f",
+                "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/935a8b7d-937c-42a3-933f-fcd2e42b3a41.jpg"
+            }
+        }
+    },
+    {
+        "id": "e31cfee9-64ba-4253-b5b8-ddffc1dcc708",
+        "createdAt": 1589104531,
+        "reedAt": null,
+        "data": {
+            "body": "There is new post in community {0, string}",
+            "notificationType": "community.post.created",
+            "comminuty": {
+                "id": 4,
+                "postId": 517,
+                "name": "Деффчёнки",
+                "primaryImage": ""
+            }
+        }
+    },
+    {
+        "id": "43eab0ae-b1a4-4cdf-a778-e86336eff302",
+        "createdAt": 1589104005,
+        "reedAt": null,
+        "data": {
+            "body": "User {0, string} sent you friend request",
+            "notificationType": "friendships.sent",
+            "sender": {
+                "id": "5eb3f3055566227d7440cd07",
+                "firstName": "Максим",
+                "lastName": "Терентьевa",
+                "sex": "f",
+                "userPic": "https://i.picsum.photos/id/47/500/500.jpg"
+            }
+        }
+    },
+    {
+        "id": "a5d63fb9-7212-4b49-9b72-faf22c11594e",
+        "createdAt": 1589103777,
+        "reedAt": null,
+        "data": {
+            "body": "User {0, string} updated profile photo",
+            "notificationType": "user.profile.image.updated",
+            "sender": {
+                "id": "5eb3f2dd5566227d7440cc81",
+                "firstName": "Марианка",
+                "lastName": "Кабанова",
+                "sex": "n",
+                "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/c09905ea-6288-45b9-b628-46e9e13248ca.png"
+            }
+        }
+    },
+    {
+        "id": "efbb1e8b-03b0-49fd-b737-d96dd5f8f3b4",
+        "createdAt": 1589103753,
+        "reedAt": null,
+        "data": {
+            "body": "User {0, string} updated profile photo",
+            "notificationType": "user.profile.image.updated",
+            "sender": {
+                "id": "5eb3f2dd5566227d7440cc81",
+                "firstName": "Марианка",
+                "lastName": "Кабанова",
+                "sex": "n",
+                "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/e1d296eb-15da-4437-9987-6d765543248f.jpg"
+            }
+        }
+    },
+    {
+        "id": "61841f9a-1614-4ffa-a325-609830546647",
+        "createdAt": 1589103738,
+        "reedAt": null,
+        "data": {
+            "body": "User {0, string} updated profile photo",
+            "notificationType": "user.profile.image.updated",
+            "sender": {
+                "id": "5eb3f2dd5566227d7440cc81",
+                "firstName": "Марианка",
+                "lastName": "Кабанова",
+                "sex": "n",
+                "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/94e0f673-57f0-41e6-98f8-eddac91acffa.jpg"
+            }
+        }
+    },
+    {
+        "id": "ecda501c-b469-496e-8229-f7027d33acaa",
+        "createdAt": 1589103706,
+        "reedAt": null,
+        "data": {
+            "body": "User {0, string} updated profile photo",
+            "notificationType": "user.profile.image.updated",
+            "sender": {
+                "id": "5eb3f2dd5566227d7440cc81",
+                "firstName": "Марианка",
+                "lastName": "Кабанова",
+                "sex": "n",
+                "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/a4fb428d-2d62-47da-a588-2c147ff6a2b3.jpg"
+            }
+        }
+    },
+    {
+        "id": "d7271457-fdcc-45b2-9d12-b9ee089f64a3",
+        "createdAt": 1589103699,
+        "reedAt": null,
+        "data": {
+            "body": "User {0, string} updated profile photo",
+            "notificationType": "user.profile.image.updated",
+            "sender": {
+                "id": "5eb3f2dd5566227d7440cc81",
+                "firstName": "Марианка",
+                "lastName": "Кабанова",
+                "sex": "n",
+                "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/82e01fcf-8454-4b4f-8f6b-b6e633e1d9e4.jpg"
+            }
+        }
+    },
+    {
+        "id": "0a927f35-50d5-475e-a076-c91644e2faa3",
+        "createdAt": 1589103636,
+        "reedAt": null,
+        "data": {
+            "body": "There is new post in community {0, string}",
+            "notificationType": "community.post.created",
+            "comminuty": {
+                "id": 4,
+                "postId": 516,
+                "name": "Деффчёнки",
+                "primaryImage": ""
+            }
+        }
+    }
+]

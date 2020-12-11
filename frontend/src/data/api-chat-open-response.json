@@ -1,0 +1,28 @@
+{
+    "id": "5ebce7b7df483f4e6759a282",
+    "name": "чат 939",
+    "lastMessageText": null,
+    "lastMessageDT": null,
+    "isRead": false,
+    "isLastFromMe": false,
+    "attendees": [
+        {
+            "id": "5eb3f2e35566227d7440cc98",
+            "lastActivity": null,
+            "userPic": "https://.../thumbs/6f945daf-7d01-45be-9f3d-3f7660dcf88d.jpg",
+            "firstName": "Инесса",
+            "lastName": "Яковлевa",
+            "isOnline": false,
+            "sex": "f"
+        },
+        {
+            "id": "5eb3f2e45566227d7440cc9a",
+            "lastActivity": null,
+            "userPic": "https://.../thumbs/83f9f9b3-60cc-4b73-adc7-5d0116e456e7.jpg",
+            "firstName": "Герасим",
+            "lastName": "Захаровa",
+            "isOnline": false,
+            "sex": "m"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+
+#postFilter {
+    .fa-chevron-down {
+        font-size: 10px;
+    }
+}
+
+.newsViewModes {
+    color: #939292;
+
+    span:first-child {
+        margin-right: 11px;
+    }
+
+    button:nth-child(2) {
+        margin-right: 7px;
+    }
+
+    button {
+        svg {
+            fill: #939292;
+
+            &:hover {
+                fill: #204af4;
+            }
+        }
+    }
+}

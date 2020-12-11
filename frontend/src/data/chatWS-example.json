@@ -1,0 +1,17 @@
+{
+    "data": {
+        "id": 3987,
+        "firstName": "Виктория",
+        "lastName": "Мамонтовa",
+        "body": "20-45",
+        "createdAt": 1587231923,
+        "updatedAt": 1587231923,
+        "isEdited": false,
+        "isRead": null,
+        "isMine": false,
+        "userPic": "https://habrastorage.org/storage2/b92/bcf/532/b92bcf532c0a2889272ffd72ffb1f2b5.png",
+        "chatId": 80
+    },
+    "topic_id": "278d6ce342fc82762e118fc1c6f633116ee373d5",
+    "event_type": "message.new"
+}

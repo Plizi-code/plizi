@@ -1,0 +1,90 @@
+
+#chatMessagesWrapper {
+    .checked-message {
+        background-color: #e3e6ec;
+    }
+}
+
+#chatMain {
+
+    .chat-list-scroll {
+        position: relative;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        overflow: hidden;
+
+        .ps__rail-y {
+            opacity: 1;
+            width: 10px;
+            background-color: #f8f9fa;
+            box-shadow: inset 0 0 1px 2px rgba(0, 0, 0, 0.02);
+        }
+    }
+
+    .ps__rail-x {
+        height: 10px;
+        border-radius: 6px;
+        opacity: .4;
+        background-color: #e3e3e3;
+    }
+    .ps__rail-x.ps--clicking .ps__thumb-x,
+    .ps__rail-x:focus>.ps__thumb-x,
+    .ps__rail-x:hover>.ps__thumb-x {
+        height: 6px;
+    }
+    .ps__rail-y.ps--clicking .ps__thumb-y,
+    .ps__rail-y:focus>.ps__thumb-y,
+    .ps__rail-y:hover>.ps__thumb-y {
+        width: 6px;
+    }
+}
+
+
+.multiselect {
+    &__content {
+        padding-top: 2px;
+        padding-bottom: 2px;
+
+         &-wrapper {
+             max-height: 250%;
+         }
+    }
+    &__option {
+        padding: 0;
+        &--highlight {
+            background-color: $grey;
+        }
+        &--selected{
+            background-color: $grey!important;
+        }
+    }
+
+    &__tag {
+        background-color: $grey;
+        color: #000000;
+
+        &-icon{
+            &:after{
+                color: #fff;
+            }
+            &:hover {
+                background-color: #c3c3c3;
+            }}
+    }
+}
+
+
+.chat-members-scroll {
+    height: auto;
+    max-height: calc(100vh - 305px);
+    overflow: auto;
+
+    .ps__rail-y {
+        width: 10px;
+        border-radius: 6px;
+        opacity: .4;
+        background-color: #e3e3e3;
+    }
+}

@@ -1,0 +1,194 @@
+version: "3.1"
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: "plizi_mysql"
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_general_ci
+    volumes:
+      - ./mysql_data_plizi:/var/lib/mysql
+    env_file:
+      - ./backend/docker/mysql/.env
+    ports:
+      - "3306:3306"
+
+  mysql8:
+    image: mysql:latest
+    container_name: "plizi_mysql8"
+    command:
+      - "--default-authentication-plugin=mysql_native_password"
+    volumes:
+      - ./mysql8_data_plizi:/var/lib/mysql
+    env_file:
+      - ./backend/docker/mysql/.env
+    ports:
+      - "3307:3306"
+
+  neo4j:
+    image: bitnami/neo4j:3
+    env_file:
+      - ./backend/docker/neo4j/.env
+    volumes:
+      - ./neo4j-persistence:/bitnami
+    ports:
+      - '7474:7474'
+      - '7473:7473'
+      - '7687:7687'
+
+  mongodb:
+    image: mongo:latest
+    env_file:
+      - ./backend/docker/mongo/.env
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongodb_data_plizi:/data/db
+
+  app_nginx:
+    image: nginx
+    container_name: "plizi_nginx_app"
+    working_dir: /app
+    volumes:
+      - ./frontend/docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./frontend/docker/nginx/conf.d:/etc/nginx/conf.d/
+      - ./frontend/docker/dhparam:/etc/nginx/dhparam
+      - ./frontend/docker/certbot/conf/:/etc/nginx/ssl/
+      - ./frontend/docker/certbot/data:/usr/share/nginx/html/letsencrypt
+      - ./frontend:/app
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - php_api
+
+  app_node:
+    build: ./frontend/docker/node
+    container_name: "plizi_node_app"
+    tty: true
+    volumes:
+      - ./frontend:/app
+
+  api_nginx:
+    image: nginx
+    container_name: "plizi_nginx_api"
+    working_dir: /app
+    volumes:
+      - ./backend/docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./backend:/app
+    ports:
+      - "81:80"
+    depends_on:
+      - php_api
+
+  php_api:
+    build: ./backend/docker/
+    container_name: "plizi_api"
+    working_dir: /app
+    user: "www-data"
+    volumes:
+      - ./backend:/app
+      - ./frontend/docker/certbot/conf/:/etc/nginx/ssl/
+    depends_on:
+      - mysql
+      - mongodb
+
+  php_ws:
+    build: ./backend/docker/ws
+    container_name: "plizi_php_ws"
+    working_dir: /app
+    volumes:
+    - ./frontend/docker/certbot/conf/:/etc/nginx/ssl/
+    - ./backend:/app
+    ports:
+    - "7070:7070"
+    depends_on:
+      - php_api
+
+  queue_worker:
+    build: ./backend/docker/
+    container_name: "plizi_queue_worker"
+    working_dir: /app
+    volumes:
+      - ./backend:/app
+    command: php artisan queue:work
+    depends_on:
+      - php_api
+
+  swaggereditor:
+    image: sebp/swagger-editor
+    container_name: "plizi_swagger_editor_api"
+    ports:
+      - "8081:8080"
+
+  swagger:
+    image: swaggerapi/swagger-ui
+    container_name: "plizi_swagger_api"
+    environment:
+      SWAGGER_JSON: /app/swagger.json
+      BASE_URL: /docs
+    volumes:
+    - ./swagger.json:/app/swagger.json
+    expose:
+      - 8080
+    ports:
+      - "8082:8080"
+
+  certbot:
+    image: certbot/certbot:latest
+    command: certonly --webroot --webroot-path=/usr/share/nginx/html/letsencrypt --email kiliman6aro@gmail.com --agree-tos --no-eff-email -d vm1095330.hl.had.pm
+    volumes:
+      - ./frontend/docker/certbot/conf/:/etc/letsencrypt
+      - ./frontend/docker/certbot/logs/:/var/log/letsencrypt
+      - ./frontend/docker/certbot/data:/usr/share/nginx/html/letsencrypt
+
+  redis:
+    image: 'bitnami/redis:latest'
+    container_name: "plizi_redis"
+    env_file:
+      - ./backend/docker/redis/.env
+    volumes:
+      - ./redis_data_plizi:/data
+    ports:
+    - "6379:6379"
+
+#  node:
+#    build: ./backend/docker/node
+#    container_name: "plizi_node_ws"
+#    tty: true
+#    volumes:
+#      - ./backend:/app
+#    ports:
+#    - "6061:6061"
+
+#  yii2_fpm:
+#    container_name: "plizi_yii2_fpm"
+#    build:
+#      context: ./yii2/docker/conf/fpm
+#      dockerfile: Dockerfile
+#    volumes:
+#      - ./yii2:/var/www/vhosts/edi/
+#    working_dir: /var/www/vhosts/edi
+#    command: "/usr/sbin/php-fpm7.3 -F -O"
+#    environment:
+#      - YII_ENV=dev
+#      - YII_DEBUG=true
+#    env_file:
+#      - ./backend/docker/mysql/.env
+#    user: "www-data"
+#
+#  yii2_nginx:
+#    container_name: "plizi_yii2_nginx"
+#    image: nginx
+#    ports:
+#      - "82:80"
+#    volumes:
+#      - ./yii2:/var/www/vhosts/edi
+#      - ./yii2/docker/etc/nginx:/etc/nginx
+#    depends_on:
+#      - yii2_fpm
+
+volumes:
+  mysql_data_plizi:
+  redis_data_plizi:
+  mongodb_data_plizi:
+  mysql8_data_plizi:
+  neo4j-persistence:

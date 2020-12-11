@@ -1,0 +1,21 @@
+#pliziMobile {
+    .plizi-mobile {
+        min-height: 258px;
+
+        h5 {
+            font-size: 18px;
+            color: #303030;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .btn-social-app {
+            display: inline-block;
+            vertical-align: top;
+            img {
+                height: 36px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,70 @@
+.hot-communities {
+    text-align: center;
+    color: #A6A7A9;
+    max-width: 100%;
+
+    a {
+        position: relative;
+    }
+
+    img {
+        position: relative;
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+
+    .btn-remove-from-hot {
+        position: absolute;
+        top: -5px;
+        left: 50%;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        padding: 3px;
+        border: 0;
+        background-color: #EF482C;
+        font-size: 10px;
+        color: #FFFFFF;
+        border-radius: 100%;
+        transform: translate(40%, 0%) rotate(45deg);
+        transition: .4s;
+        z-index: 1;
+        opacity: 0;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .add-new {
+        position: relative;
+        display: inline-block;
+        background-color: #E3E4EC;
+        width: 48px;
+        min-width: 48px;
+        height: 48px;
+        border-radius: 100%;
+    }
+}
+
+.add-new {
+    .fa {
+        line-height: 48px;
+        color: #B3B6D0;
+        transition: .4s;
+    }
+
+    &:hover .fa {
+        color: $iconHoverColor;
+    }
+}
+
+#accountToolbarLeft {
+    .router-link-active {
+        .icon {
+            fill: $iconHoverColor;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+.plz-gallery-viewer {
+    position: fixed;
+    width: 70%;
+    height: 100vh;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+
+    &-overflow {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        cursor: pointer;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &-nav {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        display: flex;
+
+        &-desktop {
+            width: 50%;
+            height: 100%;
+            z-index: 2;
+        }
+
+        &-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            z-index: 5;
+            background: #000;
+            box-shadow: 0 0 4px 0 rgba(255, 255, 255, .5);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            opacity: 0.6;
+            transition: opacity .3s;
+            transform: translateY(-50%);
+            transform-origin: 50% 50%;
+            cursor: pointer;
+
+            svg {
+                height: 25px;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &-prev {
+                left: 5px;
+            }
+            &-next {
+                right: 5px;
+            }
+        }
+    }
+    .plz-gallery-viewer-nav img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 25px;
+        height: 25px;
+        min-width: unset;
+        min-height: unset;
+        user-select: none;
+        transform-origin: center;
+    }
+
+    &-close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 32px;
+        height: 32px;
+        opacity: 0.3;
+        z-index: 2001;
+        border: none;
+        background: none;
+        outline: none;
+        display: inline-block;
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            opacity: 1;
+        }
+        &:before,
+        &:after {
+            position: absolute;
+            left: 15px;
+            top: 0;
+            content: ' ';
+            height: 33px;
+            width: 2px;
+            background-color: #ffffff;
+        }
+        &:before {
+            transform: rotate(45deg);
+        }
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    .plz-gallery-viewer-current {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        img {
+            z-index: 2;
+            max-height: calc(100% - 100px);
+            max-width: calc(100% - 100px);
+            min-width: unset;
+            min-height: unset;
+            height: auto;
+            width: auto;
+        }
+    }
+}

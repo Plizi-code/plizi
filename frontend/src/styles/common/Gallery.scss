@@ -1,0 +1,410 @@
+
+$portraitFullHeight: 750px;
+
+.plz-gallery-portrait {
+    height: auto !important;
+}
+
+.plz-gallery-album.plz-gallery-fifth,
+.plz-gallery-album.plz-gallery-fourth,
+.plz-gallery-album.plz-gallery-triple {
+    height: max-content;
+    .plz-gallery-wrapper {
+        img {
+            height: 250px;
+        }
+    }
+}
+
+.plz-gallery {
+    position: relative;
+    height: $portraitFullHeight;
+
+    .message-gallery {
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &--open {
+        overflow: hidden;
+
+        .plz-linked-chat-block.mr-3.bg-white-br20.active-chat.plz-favorit-z {
+            overflow: visible;
+        }
+
+        header {
+        z-index: 1;
+        }
+    }
+
+    &-wrapper {
+      display: inline;
+    }
+
+    &-double {
+        img {
+            //height: $portraitFullHeight;
+            height: $portraitFullHeight / 2;
+        }
+    }
+
+    &-single {
+        height: 100%;
+        img {
+            height: $portraitFullHeight;
+        }
+    }
+
+    &-attached-chat {
+        .plz-gallery-single {
+            .plz-gallery-wrap {
+                img {
+                    width: 200px !important;
+                    height: 200px;
+                }
+            }
+        }
+        .plz-gallery-portrait {
+            display: flex;
+         .plz-gallery-image-portrait-block-2, .plz-gallery-image-portrait-block-1 {
+             width: 120px;
+         }
+    }
+
+        .plz-gallery-image-portrait-wrap {
+            height: 170px;
+            width: 200px;
+        }
+
+        .plz-gallery-viewer-nav {
+            width: 100vw;
+        }
+
+        .plz-gallery-viewer {
+            width: 100vw;
+        }
+
+    }
+    &-wrap {
+        overflow: hidden;
+    }
+    &-pic {
+        //padding: 5px;
+    }
+    &-image {
+        object-fit: cover;
+        cursor: pointer;
+        padding: 5px;
+        width: 100%;
+
+        &-mores {
+            position: relative;
+            &::before {
+                content: attr(data-more);
+                position: absolute;
+                z-index: 20;
+                height: 97%;
+                width: 98%;
+                background-size: 100%;
+                color: white;
+                cursor: pointer;
+                font-size: 32px;
+                top: 50%;
+                left: 50%;
+                text-align: center;
+                transform: translate(-50%, -50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        &-album {
+            height: $portraitFullHeight;
+            &-full {
+                width: 100%;
+                height: 47%;
+                img {
+                    height: 100%;
+                }
+            }
+
+            &-half {
+                height: 53%;
+                width: calc(100% / 2);
+            }
+
+            &-third {
+                width: calc(100% / 3);
+                height: $portraitFullHeight / 2.1;
+            }
+
+            &-2 {
+                height: $portraitFullHeight / 2;
+            }
+            &-3 {
+                height: $portraitFullHeight / 2;
+            }
+        }
+
+        &-portrait {
+            height: 100%;
+            width: 100%;
+
+            &-block-1 {
+                width: 100%;
+            }
+
+            &-block-one {
+                img {
+                    width: auto;
+                    max-width: 100%;
+                }
+            }
+
+            &-block-2 {
+                width: 100%;
+            }
+
+            &-block-3 {
+                width: 100%;
+            }
+
+            &-full {
+                height: $portraitFullHeight;
+            }
+
+            &-half {
+                height: $portraitFullHeight / 2;
+            }
+
+            &-third {
+                height: $portraitFullHeight / 3;
+            }
+        }
+    }
+
+    &-portrait {
+        display: flex;
+    }
+
+    &-album {
+        height: $portraitFullHeight ;
+
+            &-half {
+                height: 70%;
+                width: calc(100% / 2);
+            }
+
+            &-third {
+                width: calc(100% / 3);
+                height: 30%;
+            }
+    }
+}
+
+
+.attachments {
+    $portraitFullHeight: 400px;
+    .plz-gallery {
+        position: relative;
+        height: $portraitFullHeight;
+
+        .message-gallery {
+            width: 100%;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &--open {
+            overflow: hidden;
+
+            .plz-linked-chat-block.mr-3.bg-white-br20.active-chat.plz-favorit-z {
+                overflow: visible;
+            }
+
+            header {
+                z-index: 1;
+            }
+        }
+
+        &-wrapper {
+            display: inline;
+        }
+
+        &-fourth {
+            .plz-gallery-wrap-album {
+                .plz-gallery-wrapper {
+                    .plz-gallery-image-album-full {
+                        height: 170px;
+                    }
+                }
+            }
+        }
+
+        &-double {
+            img {
+                height: $portraitFullHeight / 2;
+            }
+        }
+
+        &-single {
+            height: 100%;
+            img {
+                height: $portraitFullHeight;
+            }
+        }
+
+        &-attached-chat {
+            .plz-gallery-single {
+                .plz-gallery-wrap {
+                    img {
+                        width: 200px !important;
+                        height: 200px;
+                    }
+                }
+            }
+            .plz-gallery-portrait {
+                display: flex;
+                .plz-gallery-image-portrait-block-2, .plz-gallery-image-portrait-block-1 {
+                    width: 130px;
+                }
+            }
+
+            .plz-gallery-image-portrait-wrap {
+                height: 170px;
+                width: 200px;
+            }
+
+            .plz-gallery-viewer-nav {
+                width: 100vw;
+            }
+
+            .plz-gallery-viewer {
+                width: 100vw;
+            }
+
+        }
+        &-wrap {
+            overflow: hidden;
+        }
+        &-pic {
+            //padding: 5px;
+        }
+        &-image {
+            object-fit: cover;
+            cursor: pointer;
+            padding: 5px;
+            width: 100%;
+
+            &-mores {
+                position: relative;
+                &::before {
+                    content: attr(data-more);
+                    position: absolute;
+                    height: 97%;
+                    width: 98%;
+                    background-size: 100%;
+                    color: white;
+                    cursor: pointer;
+                    font-size: 32px;
+                    top: 50%;
+                    left: 50%;
+                    text-align: center;
+                    transform: translate(-50%, -50%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            &-album {
+                height: $portraitFullHeight;
+                &-full {
+                    width: 100%;
+                    height: 47%;
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                &-half {
+                    height: 53%;
+                    width: calc(100% / 2);
+                }
+
+                &-third {
+                    width: calc(100% / 3);
+                    height: $portraitFullHeight / 2.1;
+                }
+
+                &-2 {
+                    height: $portraitFullHeight / 2;
+                }
+                &-3 {
+                    height: $portraitFullHeight / 2;
+                }
+            }
+
+            &-portrait {
+                height: 100%;
+                width: 100%;
+
+                &-block-1 {
+                    width: 100%;
+                }
+
+                &-block-one {
+                    img {
+                        width: auto;
+                        max-width: 100%;
+                    }
+                }
+
+                &-block-2 {
+                    width: 100%;
+                }
+
+                &-block-3 {
+                    width: 100%;
+                }
+
+                &-full {
+                    height: $portraitFullHeight;
+                }
+
+                &-half {
+                    height: $portraitFullHeight / 2;
+                }
+
+                &-third {
+                    height: $portraitFullHeight / 3;
+                }
+            }
+        }
+
+        &-portrait {
+            display: flex;
+        }
+
+        &-album {
+            height: $portraitFullHeight ;
+
+            &-half {
+                height: 70%;
+                width: calc(100% / 2);
+            }
+
+            &-third {
+                width: calc(100% / 3);
+                height: 30%;
+            }
+        }
+    }
+
+}

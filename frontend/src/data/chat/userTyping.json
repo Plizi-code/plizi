@@ -1,0 +1,75 @@
+{
+    "chatId": "5eca2238dab2650e106eb6d2",
+    "topic_id": "e4f4b3c22098ad77cc7680a93c1b7154823fa0f9",
+    "event_type": "user.typing",
+
+    "data": {
+        "id": "5eb3f3075566227d7440cd0d",
+        "email": "swaniawski.erick@mccullough.com",
+        "isOnline": false,
+        "lastActivity": 1590318038,
+        "profile": {
+            "firstName": "Евгения",
+            "lastName": "Авдеевa",
+            "sex": "f",
+            "birthday": "1977-01-24",
+            "location": {
+                "id": 1515182,
+                "title": {
+                    "ru": "Авдеевка",
+                    "ua": "Авдеевка",
+                    "en": "Авдеевка"
+                },
+                "region": {
+                    "id": 1514896,
+                    "title": {
+                        "ru": "Черниговская область",
+                        "ua": "Чернігівська область",
+                        "en": "Черниговская область"
+                    }
+                },
+                "country": {
+                    "id": 2,
+                    "title": {
+                        "ru": "Украина",
+                        "ua": "Україна",
+                        "en": "Ukraine"
+                    }
+                }
+            },
+            "relationshipId": 3,
+            "relationshipUser": null,
+            "userPic": "https://plizibuck.s3.eu-central-1.amazonaws.com/images/originals/thumbs/8c5dba34-37dd-49aa-833f-de8eca93bbc4.jpg",
+            "avatar": {
+                "id": 158,
+                "originalName": "s1200 (33).jpg",
+                "url": "https://plizibuck.s3.eu-central-1.amazonaws.com/images/originals/thumbs/8c5dba34-37dd-49aa-833f-de8eca93bbc4.jpg",
+                "path": "https://plizibuck.s3.eu-central-1.amazonaws.com/images/originals/thumbs/8c5dba34-37dd-49aa-833f-de8eca93bbc4.jpg",
+                "mimeType": "image/jpeg",
+                "size": 54657,
+                "image": {
+                    "original": {
+                        "width": 450,
+                        "height": 676,
+                        "path": "https://plizibuck.s3.eu-central-1.amazonaws.com/images/originals/originals/yPLBSDl31DevdoBXoxvZrYWHTGranloi2LSumfgi.jpeg"
+                    },
+                    "normal": {
+                        "width": 399,
+                        "height": 600,
+                        "path": "https://plizibuck.s3.eu-central-1.amazonaws.com/images/originals/normals/8c5dba34-37dd-49aa-833f-de8eca93bbc4.jpg"
+                    },
+                    "medium": {
+                        "width": 211,
+                        "height": 211,
+                        "path": "https://plizibuck.s3.eu-central-1.amazonaws.com/images/originals/mediums/8c5dba34-37dd-49aa-833f-de8eca93bbc4.jpg"
+                    },
+                    "thumb": {
+                        "width": 80,
+                        "height": 80,
+                        "path": "https://plizibuck.s3.eu-central-1.amazonaws.com/images/originals/thumbs/8c5dba34-37dd-49aa-833f-de8eca93bbc4.jpg"
+                    }
+                }
+            }
+        }
+    }
+}

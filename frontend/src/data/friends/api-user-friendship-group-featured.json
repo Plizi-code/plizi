@@ -1,0 +1,23 @@
+{
+    "data": {
+        "list": [
+            {
+                "id": "5eb3f2ec5566227d7440ccb2",
+                "isOnline": false,
+                "lastActivity": 1589817264,
+                "profile": {
+                    "firstName": "Олеся",
+                    "lastName": "Александрова",
+                    "sex": "f",
+                    "birthday": "1987-12-17",
+                    "location": {},
+                    "relationshipId": 2,
+                    "userPic": "https:...",
+                    "avatar": {}
+                },
+                "mutualFriendsCount": 0
+            }
+        ],
+        "totalCount": 0
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "id": 53,
+    "originalName": "avatar_3746_500.jpg",
+    "url": "https://plizi.s3.eu-north-1.amazonaws.com/chat/attachments/originals/wRXuUMGNaIMXvE9E9a8UfYXMXokkO1D4PSOe1677.jpeg",
+    "mimeType": "image/jpeg",
+    "size": 25599,
+
+    "image": {
+        "original": {
+            "width": 500,
+            "height": 500,
+            "path": "https://plizi.s3.eu-north-1.amazonaws.com/chat/attachments/originals/wRXuUMGNaIMXvE9E9a8UfYXMXokkO1D4PSOe1677.jpeg"
+        },
+        "normal": {
+            "width": 400,
+            "height": 400,
+            "path": "https://plizi.s3.eu-north-1.amazonaws.com/chat/attachments/normals/f01a69f9-083d-450c-8492-dfc0bd9a5859.jpg"
+        },
+        "medium": {
+            "width": 400,
+            "height": 400,
+            "path": "https://plizi.s3.eu-north-1.amazonaws.com/chat/attachments/mediums/f01a69f9-083d-450c-8492-dfc0bd9a5859.jpg"
+        },
+        "thumb": {
+            "width": 60,
+            "height": 60,
+            "path": "https://plizi.s3.eu-north-1.amazonaws.com/chat/attachments/thumbs/f01a69f9-083d-450c-8492-dfc0bd9a5859.jpg"
+        }
+    }
+}

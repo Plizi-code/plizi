@@ -1,0 +1,171 @@
+[
+    {
+        "id": "ad15bd39-35e7-40b0-8111-2308d3fb1860",
+        "data": {
+            "community": {
+                "name": "Так как.",
+                "primaryImage": "https://lorempixel.com/640/480/people/",
+                "id": 1,
+                "postId": 512
+            },
+            "body": "There is new post in community {0, string}",
+            "notificationType": "community.post.created"
+        },
+        "readAt": null,
+        "createdAt": 1589018904
+    },
+    {
+        "id": "817718c9-1efb-41c1-bf63-d8700ecc0d0e",
+        "data": {
+            "sender": {
+                "firstName": "Марианка",
+                "lastName": "Кабанова",
+                "sex": "n",
+                "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/ddd23998-314a-41ca-9039-b800199a5aed.png",
+                "lastActivity": 1589017300,
+                "id": "5eb3f2dd5566227d7440cc81",
+                "postId": 511
+            },
+            "body": "User {0, string} created new post",
+            "notificationType": "user.post.created"
+        },
+        "readAt": null,
+        "createdAt": 1589017336
+    },
+    {
+        "id": "2d4c19a5-58ca-4a62-a07a-4fa81fe03b35",
+        "data": {
+            "sender": {
+                "firstName": "Марианка",
+                "lastName": "Кабанова",
+                "sex": "n",
+                "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/ddd23998-314a-41ca-9039-b800199a5aed.png",
+                "lastActivity": 1589011641,
+                "id": "5eb3f2dd5566227d7440cc81"
+            },
+            "body": "User {0, string} updated profile photo",
+            "notificationType": "user.profile.image.updated"
+        },
+        "readAt": null,
+        "createdAt": 1589011847
+    },
+    {
+        "id": "3f95fa57-d7b1-44bd-8ee2-412b2888ac2e",
+        "data": {
+            "sender": {
+                "firstName": "Марианка",
+                "lastName": "Кабанова",
+                "sex": "n",
+                "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/9e3f7500-90ec-4f52-be8e-f4914b148ee5.png",
+                "lastActivity": 1589011641,
+                "id": "5eb3f2dd5566227d7440cc81"
+            },
+            "body": "User {0, string} updated profile photo",
+            "notificationType": "user.profile.image.updated"
+        },
+        "readAt": null,
+        "createdAt": 1589011672
+    },
+    {
+        "id": "3565580e-f054-4589-8537-ec4ca811c4b3",
+        "data": {
+            "sender": {
+                "firstName": "Марианка",
+                "lastName": "Кабанова",
+                "sex": "n",
+                "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/97ad4bec-1780-4100-92a6-fd77f8ccd7e4.png",
+                "lastActivity": 1589010031,
+                "id": "5eb3f2dd5566227d7440cc81"
+            },
+            "body": "User {0, string} updated profile photo",
+            "notificationType": "user.profile.image.updated"
+        },
+        "readAt": null,
+        "createdAt": 1589011604
+    },
+    {
+        "id": "f03f8da4-466e-41df-baef-b7c5c110ff5c",
+        "data": {
+            "sender": {
+                "firstName": "Марианка",
+                "lastName": "Кабанова",
+                "sex": "n",
+                "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/563d9fa1-3ef4-4606-8d67-0d5df13e52d0.jpg",
+                "lastActivity": 1589008515,
+                "id": "5eb3f2dd5566227d7440cc81"
+            },
+            "body": "User {0, string} uploaded new photo",
+            "notificationType": "user.profile.image.created"
+        },
+        "readAt": null,
+        "createdAt": 1589009298
+    },
+    {
+        "id": "cd4c63e6-9551-420f-be3b-921f51a98b4f",
+        "data": {
+            "sender": {
+                "firstName": "Alex",
+                "lastName": "Targa",
+                "sex": "n",
+                "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/67b77388-83bf-44b6-84d9-06db9e5cfe8a.png",
+                "lastActivity": 1589004242,
+                "id": "5eb41581e0c4d15990213d32"
+            },
+            "body": "User {0, string} updated profile photo",
+            "notificationType": "user.profile.image.updated"
+        },
+        "readAt": null,
+        "createdAt": 1589004293
+    },
+    {
+        "id": "5fe23347-a511-469e-b02c-e2391a6856f3",
+        "data": {
+            "sender": {
+                "firstName": "Alex",
+                "lastName": "Targa",
+                "sex": "n",
+                "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/a51bfc5b-aa76-4c25-b189-f1162a5b40c3.jpg",
+                "lastActivity": 1588961597,
+                "id": "5eb41581e0c4d15990213d32"
+            },
+            "body": "User {0, string} updated profile photo",
+            "notificationType": "user.profile.image.updated"
+        },
+        "readAt": null,
+        "createdAt": 1588962982
+    },
+    {
+        "id": "36087f20-91d1-4774-9ef1-1d7be5586cdd",
+        "data": {
+            "sender": {
+                "firstName": "Alex",
+                "lastName": "Targa",
+                "sex": "n",
+                "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/8de3eba1-a310-49a4-a8ab-d11082e1dc37.png",
+                "lastActivity": 1588961597,
+                "id": "5eb41581e0c4d15990213d32"
+            },
+            "body": "User {0, string} updated profile photo",
+            "notificationType": "user.profile.image.updated"
+        },
+        "readAt": null,
+        "createdAt": 1588962615
+    },
+    {
+        "id": "71f83275-41af-49fe-858f-76e2b5d88741",
+        "data": {
+            "sender": {
+                "firstName": "Natashka",
+                "lastName": "Ladovir",
+                "sex": "f",
+                "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/43613055-c92c-4846-ad0b-cb4f710bb09b.jpg",
+                "lastActivity": 1588943071,
+                "id": "5eb42dc768fe15053631d2f4"
+            },
+            "body": "User {0, string} sent you friend request",
+            "notificationType": "friendships.sent"
+        },
+        "readAt": null,
+        "createdAt": 1588943413
+    }
+]

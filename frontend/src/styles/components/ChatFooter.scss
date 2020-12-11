@@ -1,0 +1,40 @@
+$chatMessageUserPicSize: 32px;
+
+.chat-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFFFFF;
+
+    #txtMessage {
+        border: 0;
+
+        &::placeholder {
+            font-size: $placeholderSize;
+            color: $placeholderColor;
+        }
+        &:focus {
+            padding-top: 5px!important;
+        }
+    }
+
+    .chat-companion-user-pic {
+        width: $chatMessageUserPicSize;
+        height: $chatMessageUserPicSize;
+        min-width: $chatMessageUserPicSize;
+    }
+
+    .companion-is-typing {
+        height: 20px;
+        min-height: 20px;
+        max-height: 20px;
+
+        span {
+            font-size: 10px;
+            line-height: 2;
+        }
+    }
+
+}
+

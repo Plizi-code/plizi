@@ -1,0 +1,42 @@
+{
+    "data": {
+        "id": 40,
+        "isOnline": true,
+        "lastActivity": 1588017,
+        "profile": {
+            "firstName": "Alex",
+            "lastName": "Dnipro Bashmakow",
+            "sex": "n",
+            "birthday": "1976-02-01",
+            "location": {
+                "id": 1509378,
+                "title": "Александровка",
+                "region": {
+                    "id": 1508808,
+                    "title": "Одесская область"
+                },
+                "country": {
+                    "id": 2,
+                    "title": "Украина"
+                }
+            },
+            "city": {
+                "id": 1509378,
+                "title": "Александровка"
+            },
+            "relationshipId": null,
+            "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/iJFrjNuVavlwFDN6saHLiweMY6Pdz16wCAU6uRza.jpeg"
+        },
+        "privacySettings": {
+            "pageType": 2,
+            "writeMessagesPermissions": 2,
+            "postWallPermissions": 2,
+            "viewWallPermissions": 2,
+            "viewFriendsPermissions": 2,
+            "twoFactorAuthEnabled": 0,
+            "smsConfirm": 0
+        }
+    },
+    "channel": "727010efa75e3d0584fbb59c1754be1288867226",
+    "email": "targettius@ukr.net"
+}

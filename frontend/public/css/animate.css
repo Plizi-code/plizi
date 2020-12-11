@@ -1,0 +1,211 @@
+.dropmenu.show,
+.likestoltip{
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 10%, 0);
+		transform: translate3d(0, 10%, 0);
+	}
+	10% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 10%, 0);
+		transform: translate3d(0, 10%, 0);
+	}
+	10% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+.typedanswer > :nth-child(1){
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+}
+@-webkit-keyframes flash {
+	0%, 50%, 100% {
+		opacity: 1;
+	}
+
+	25%, 75% {
+		opacity: 0;
+	}
+}
+
+@keyframes flash {
+	0%, 50%, 100% {
+		opacity: 1;
+	}
+
+	25%, 75% {
+		opacity: 0;
+	}
+} 
+
+.typedanswer > :nth-child(2){
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-delay: 0.2s;
+}
+@-webkit-keyframes flash {
+	0%, 50%, 100% {
+		opacity: 1;
+	}
+
+	25%, 75% {
+		opacity: 0;
+	}
+}
+
+@keyframes flash {
+	0%, 50%, 100% {
+		opacity: 1;
+	}
+
+	25%, 75% {
+		opacity: 0;
+	}
+} 
+
+.typedanswer > :nth-child(3){
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-delay: 0.4s;
+}
+@-webkit-keyframes flash {
+	0%, 50%, 100% {
+		opacity: 1;
+	}
+
+	25%, 75% {
+		opacity: 0;
+	}
+}
+
+@keyframes flash {
+	0%, 50%, 100% {
+		opacity: 1;
+	}
+
+	25%, 75% {
+		opacity: 0;
+	}
+} 
+
+.loading > :nth-child(1){
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+}
+@-webkit-keyframes flash {
+	0%, 50%, 100% {
+		opacity: 1;
+	}
+
+	25%, 75% {
+		opacity: 0;
+	}
+}
+
+@keyframes flash {
+	0%, 50%, 100% {
+		opacity: 1;
+	}
+
+	25%, 75% {
+		opacity: 0;
+	}
+} 
+
+.loading > :nth-child(2){
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-delay: 0.2s;
+}
+@-webkit-keyframes flash {
+	0%, 50%, 100% {
+		opacity: 1;
+	}
+
+	25%, 75% {
+		opacity: 0;
+	}
+}
+
+@keyframes flash {
+	0%, 50%, 100% {
+		opacity: 1;
+	}
+
+	25%, 75% {
+		opacity: 0;
+	}
+} 
+
+.loading > :nth-child(3){
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-delay: 0.4s;
+}
+@-webkit-keyframes flash {
+	0%, 50%, 100% {
+		opacity: 1;
+	}
+
+	25%, 75% {
+		opacity: 0;
+	}
+}
+
+@keyframes flash {
+	0%, 50%, 100% {
+		opacity: 1;
+	}
+
+	25%, 75% {
+		opacity: 0;
+	}
+}

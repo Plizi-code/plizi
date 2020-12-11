@@ -1,0 +1,61 @@
+.mail-body {
+    width: 932px;
+    max-width: 932px;
+    padding: 40px 80px 30px 80px;
+    background-color: white;
+    color: #1B1B1B;
+    font-family: "Proxima Nova Rg", 'Open Sans', Arial, sans-serif;
+}
+
+.mail-body .mail-logo-wrapper {
+    text-align: center;
+}
+
+
+h1.mail-welcome {
+    text-align: center;
+    color: #1B1B1B;
+    font-weight: bold;
+    font-size: 22pt;
+    margin-bottom: 48px;
+}
+
+.mail-instructions p {
+    font-size: 14pt;
+    padding: 0px;
+}
+
+.mail-btn-wrapper {
+    text-align: center;
+    margin: 0px;
+}
+
+.mail-hr {
+    border-color: #EEEDED;
+}
+
+.mail-sublinks {
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+.mail-sublinks .mail-oferta {
+    width: 280px;
+    padding: 0px 18px 0px 0px;
+    border-right: 2px solid #EDEDED;
+    text-align: right;
+}
+
+.mail-sublinks .mail-privacy {
+    padding: 0px 0px 0px 18px;
+    border-left: 1px solid #CDCCCC;
+    text-align: left;
+}
+
+.mail-sublinks a {
+    color: #373737;
+    text-decoration: none;
+    font-size: 14pt;
+    /*font-size: 14px;*/
+    font-weight: bold;
+}

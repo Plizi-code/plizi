@@ -1,0 +1,140 @@
+$minHeight: 200px;
+
+#chatMessagesWrapperBody {
+    height: calc(100% - 76px);
+}
+
+#chatPickAttendeesDialogBody {
+    min-height: 440px;
+    .multiselect__tags {
+        overflow: auto;
+    }
+    .plz-btn {
+        max-width: 100%;
+        height: auto;
+        max-height: none;
+    }
+
+}
+
+#chatMessagesBody {
+    padding-bottom: 101px; // потом регулируется vue
+
+    .btn-filter-clear {
+        color: #1554F7;
+        text-decoration: underline;
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+    .chat-messages-scroll {
+        height: 100%;
+        min-height: 200px;
+        position: relative;
+        margin: 0;
+        width: 100%;
+        overflow: hidden;
+
+        .ps__rail-y {
+            opacity: 1;
+            width: 10px;
+            background-color: #f8f9fa;
+            box-shadow: inset 0 0 1px 2px rgba(0, 0, 0, 0.02);
+
+            &:hover > .ps__thumb-y {
+                background-color: #999;
+                width: 6px;
+            }
+        }
+
+    }
+}
+
+.multiselect__tags {
+    overflow: auto;
+    max-height: 100px;
+}
+
+.clear-chat-filter {
+    .btn {
+        &:hover {
+            color: $textColor;
+        }
+    }
+}
+
+
+#plzNotification {
+    position: fixed;
+    bottom: 50px;
+    left: 35px;
+    .plz-notification {
+        background-color: rgba(19, 19, 19, .94);
+        border-radius: 20px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+
+        &-pic {
+            width: 38px;
+            min-width: 38px;
+            height: 38px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &-name {
+            font-size: 12px;
+            color: #ffffff;
+        }
+        &-text {
+            font-size: 12px;
+            color: #dadada;
+        }
+        /** @Julia по видимому класс ниже не работает **/
+        &-body {
+            max-width: 380px;
+            overflow: hidden;
+            &-text {
+                word-break: break-word;
+            }
+            p {
+                font-size: 12px;
+                color: $textGreyColor;
+                margin-bottom: 4px;
+                word-break: break-word;;
+            }
+        }
+
+        .btn {
+            height: 25px;
+        }
+    }
+
+
+    .icon-close-notification {
+        display: inline-block;
+        vertical-align: middle;
+        background: url(/images/icons/close.svg) 50% 50% no-repeat;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+}
+
+#removeCurrentDialogModal {
+    .modal-dialog {
+        width: 360px;
+    }
+
+}
+

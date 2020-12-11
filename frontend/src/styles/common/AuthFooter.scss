@@ -1,0 +1,24 @@
+#authPageWrapper {
+    .plz-footer {
+        background-color: transparent;
+        //margin-top: 46px;
+
+        .nav-link.plz-copy {
+            color: #a1a1a2;
+        }
+        .nav-link {
+            color: #484849;
+            padding: 0;
+            cursor: pointer;
+            &:hover{
+                color: $linkHoverColor;
+            }
+        }
+        .plz-bottom-link {
+            height: auto;
+            line-height: 1.5;
+        }
+    }
+}
+
+

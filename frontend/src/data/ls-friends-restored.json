@@ -1,0 +1,40 @@
+[
+    {
+        "id": 40,
+        "isOnline": true,
+        "lastActivity": 1588513099,
+        "profile": {
+            "firstName": "Alex",
+            "lastName": "Dnipro Bashmakow",
+            "sex": "n",
+            "birthday": "1976-02-01",
+            "location": {
+                "id": 1509378,
+                "title": {
+                    "ru": "Александровка",
+                    "ua": "Александровка",
+                    "en": "Александровка"
+                },
+                "region": {
+                    "id": 1508808,
+                    "title": {
+                        "ru": "Одесская область",
+                        "ua": "Одеська область",
+                        "en": "Одесская область"
+                    }
+                },
+                "country": {
+                    "id": 2,
+                    "title": {
+                        "ru": "Украина",
+                        "ua": "Україна",
+                        "en": "Ukraine"
+                    }
+                }
+            },
+            "relationshipId": null,
+            "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/iJFrjNuVavlwFDN6saHLiweMY6Pdz16wCAU6uRza.jpeg"
+        },
+        "mutualFriendsCount": null
+    }
+]

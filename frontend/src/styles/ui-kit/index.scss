@@ -1,0 +1,23 @@
+// all files in ui-kit path
+
+@import "./fonts.scss";
+@import "./plizi-variables.scss";
+@import "./common.scss";
+@import "./vue-multiselect.scss";
+@import "./icons.scss";
+@import "./cursores.scss";
+
+#pageWrapper .alert-info {
+    //color: #0c5460;
+    color: #a3a8b9;
+    //background-color: #d1ecf1;
+    background-color: #eeeff4;
+    //border-color: #bee5eb;
+    border-color: #a3a8b9;
+}
+
+$pliziBlueColor: #1554F7;
+
+.plz-blue-color {
+    color: $pliziBlueColor;
+}

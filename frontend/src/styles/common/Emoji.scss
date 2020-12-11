@@ -1,0 +1,42 @@
+
+.picker-btn {
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picker {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 999;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    padding: 4px 8px;
+    text-align: left;
+
+    &-category {
+        font-size: 0;
+        margin: 5px 0;
+    }
+
+    .picker-emoji {
+        &:hover {
+            background-color: #1554F7;
+        }
+    }
+    &-emoji {
+        display: inline-block;
+        text-align: center;
+        width: 28px;
+        font-size: 20px;
+    }
+}
+
+

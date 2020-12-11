@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-nginx-deployment
+  labels:
+    app: front-nginx
+spec:
+  selector:
+    matchLabels:
+      name: front-nginx
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: front-nginx
+    spec:
+      containers:
+        - name: front-nginx
+          image: 884088487044.dkr.ecr.eu-central-1.amazonaws.com/plizi_front:latest
+          ports:
+          - containerPort: 80

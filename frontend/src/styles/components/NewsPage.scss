@@ -1,0 +1,216 @@
+#postInterest {
+    .icon-fire {
+        fill: $red;
+    }
+    p {
+        font-size: 13px;
+        color: $postTextColor;
+    }
+}
+
+
+$height: 6px;
+$width: 24px;
+
+$color-white: #fefefe;
+$color-clouds: #ecf0f1;
+$color-silver: #bdc3c7;
+$color-peter-river: #4d54e5;
+$color-carrot: #e67e22;
+
+$transition-default: 0.25s ease-out 0.10s;
+
+.button-switch {
+    font-size: 1.5em;
+    //height: 100%;
+    margin-bottom: 0;
+    position: relative;
+    width: 30px;
+    margin-left: auto;
+
+    .lbl-off,
+    .lbl-on {
+        cursor: pointer;
+        display: block;
+        font-size: $height * 2;
+        font-weight: bold;
+        line-height: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+    }
+
+    .switch {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        // --
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        font-size: 1em;
+        line-height: 0;
+        outline: none;
+        cursor: pointer;
+
+        &:before,
+        &:after {
+            content: '';
+            font-size: 1em;
+            position: absolute;
+            top: calc( 50% - 6px );
+        }
+
+        &:before {
+            left: $height * .5;
+            top: calc( 50% - 6px * .5);
+            width: $width;
+            height: $height;
+            border-radius: $height;
+            background: $color-silver;
+            transition: background-color $transition-default;
+        }
+
+        &:after {
+            height: $height * 2;
+            width: $height * 2;
+            background: $color-white;
+            border-radius: $height;
+            transition: $transition-default;
+            transform: translate(0, 0);
+
+            border: 2px solid $color-silver;
+            box-shadow: 0 .0625em .375em 0 $color-silver;
+
+        }
+
+        &:checked {
+            &:after {
+                transform: translate($width - $height , 0);
+                border: 2px solid $color-peter-river;
+                box-shadow: 0 .0625em .375em 0 $color-peter-river;
+            }
+
+            & ~ .lbl-off {
+                opacity: 0;
+            }
+
+            & ~ .lbl-on {
+                opacity: 0;
+            }
+        }
+
+        &#switch-orange {
+            &:checked:before {
+                background: $color-carrot;
+            }
+        }
+
+        &#switch-blue {
+            &:checked:before {
+                background: $color-peter-river;
+            }
+        }
+    }
+}
+
+
+#postFilter {
+    .nav-link,
+    .btn {
+        &:hover {
+            background-color: transparent;
+            color: $textColor;
+        }
+    }
+
+    /*- Radio button -*/
+    $radioTop: 3px;
+    $radioLeft: 25px;
+    $borderRadius: 4px;
+    $radioWidth: 18px;
+
+    .radio {
+        width: 100%;
+        color: red;
+        input {
+            position: absolute;
+            left: 0;
+            bottom: $radioTop;
+            opacity: 0;
+            z-index: 2;
+        }
+
+        input:checked {
+            + span {
+                color: #ffffff;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: -$radioLeft;
+                    bottom: $radioTop;
+                    width: $radioWidth;
+                    display: inline-block;
+                    height: $radioWidth;
+                    z-index: 12;
+                    background-color: $blueBtnHover;
+                    background-image: url('../images/checked.svg');
+                    background-size: 12px 9px;
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                    border-radius: $borderRadius;
+                }
+            }
+            ~ p {
+                //font-family: $bold;
+                color: #ffffff;
+            }
+        }
+
+        span {
+            position: relative;
+            display: inline-block;
+            padding-left: 0;
+            margin-left: $radioLeft;
+            margin-bottom: 5px;
+
+            font-size: 16px;
+            line-height: 24px;
+            //font-family: $bold;
+            width: 100%;
+            color: #FFFFFF;
+
+            &:hover {
+                background-color: transparent;
+                color: $textGreyColor;
+            }
+        }
+
+        span:before {
+            content: "";
+            position: absolute;
+            left: -$radioLeft;
+            top: $radioTop;
+            bottom: auto;
+            width: $radioWidth;
+            height: $radioWidth;
+            z-index: 10;
+            background-color: #5e5e5e;
+            border-radius: $borderRadius;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #828282;
+            margin-left: auto;
+        }
+    }
+
+}

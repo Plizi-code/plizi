@@ -1,0 +1,18 @@
+#navbarWatcher {
+    .user-friend {
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}
+
+
+.notifications-link, .invitations-link {
+    color: #333;
+    transition: .4s;
+
+    &:hover {
+        color: $linkHoverColor;
+        text-decoration: none;
+    }
+}

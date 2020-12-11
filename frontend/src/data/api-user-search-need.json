@@ -1,0 +1,13 @@
+[
+    {
+        "id": 30,
+        "isOnline": true,
+        "firstName": "Анжелика",
+        "lastName": "Герасимова",
+        "sex": "m",
+        "city": "Балашиха",
+        "relationship": 0,
+        "user_pic": "https://plizi.s3.eu..."
+    }
+
+]

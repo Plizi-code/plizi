@@ -1,0 +1,23 @@
+
+#registrationForm {
+    input {
+        position: relative;
+        padding-left: 40px;
+        border-radius: 0;
+        color: #363636;
+
+        &:focus {
+            border-color: #363636;
+        }
+
+        &::placeholder {
+            font-size: $placeholderSize;
+            color: $placeholderColor;
+        }
+        &[ type="date"] {
+            font-size: $placeholderSize;
+            color: $placeholderColor;
+        }
+    }
+}
+

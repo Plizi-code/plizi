@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Plizi: Авторизация</title>
+
+    <link rel="stylesheet" href="../src/libs/bootstrap-4.3.1/bootstrap.css">
+    <link rel="stylesheet" href="../src/libs/font-awesome/css/all.css">
+
+    <script src="../src/libs/jquery-3.4.1/jquery-3.4.1.js" type="application/javascript"></script>
+    <script src="../src/libs/bootstrap-4.3.1/bootstrap.js" type="application/javascript"></script>
+    <script src="public/js/autobahn.min.js" type="application/javascript"></script>
+
+    <script>
+        var apiURL = 'http://localhost:9090';
+        var wsUrl = 'ws://127.0.0.1:7070';
+    </script>
+    <style type="text/css">
+        #loginForm h5 {
+            font-family: OpenSans-Semibold, sans-serif;
+            font-size: 24px;;
+            margin-bottom: .6em;
+        }
+        #loginForm .icon-registration {
+            margin-bottom: 30px;
+        }
+        #registrationForm .form-group {
+            position: relative;
+            margin-bottom: 0;
+        }
+        #registrationForm .lr-input {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: 40px;
+            padding-left: 50px;
+            margin: 0;
+        }
+        #registrationForm .icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        #registrationForm .plz-btn {
+            margin-top: 26px;
+            box-shadow: 0 5px 18px rgba(61, 81, 222, .4);
+            font-family: OpenSans-Bold, sans-serif;
+            font-size: 11px;
+        }
+    </style>
+    <style type="text/css">
+    .plz-login-form {
+        width: 420px;
+        max-width: 420px;
+        min-width: 420px;
+        margin-right: 24px;
+    }
+    .lr-input-email, .lr-input-password {
+        background-image: url("images/icons/input-email.png");
+        background-position: 8px center;
+        background-repeat: no-repeat;
+        padding-left: 40px;
+    }
+    .lr-input-password {
+        background-image: url("images/icons/input-name.png");
+    }
+    .btn.plz-btn.btn-login {
+        margin-top: 27px;
+    }
+    .btn.plz-btn.btn-registration {
+        margin-top: 20px;
+    }
+    .btn-primary.disabled, .btn-primary:disabled {
+        cursor: not-allowed;
+    }
+    .plz-import-socnet {
+        margin-top: 35px;
+    }
+    .plz-import-socnet > h6 {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .plz-import-socnet .plz-import-socnet-text {
+        color: #9A9A9A;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 25px;
+        margin-bottom: 40px;
+    }
+    .plz-import-socnet .plz-import-socnet-btns {
+    }
+    .plz-import-socnet .plz-import-socnet-btns .plz-socnet-btn {
+        display: block;
+        width: 48px;
+        min-width: 48px;
+        max-width: 48px;
+        height: 48px;
+        min-height: 48px;
+        max-height: 48px;
+        text-align: center;
+        border: 1px solid #989898;
+        border-radius: 48px;
+    }
+    .plz-import-socnet .plz-import-socnet-btns .plz-socnet-btn > i.fab {
+        color: #989898;
+    }
+
+</style>
+    <style type="text/css">
+    .plz-latest-entries {
+        height: 270px;
+        min-height: 270px;
+        max-height: 270px;
+    }
+    .plz-latest-entries > h6 {
+        text-align: left;
+        font-size: 16pt;
+        font-weight: bold;
+        color: #363636;
+        letter-spacing: -1px;
+        padding: 24px 0px 0px 40px;
+    }
+    .plz-last-entries-list {
+        padding-left: 40px;
+        margin-top: 15px;
+    }
+    .plz-last-entries-list .plz-last-entry-item {
+        border: 1px solid #C9CBD9;
+        width: 148px;
+        min-width: 148px;
+        max-width: 148px;
+        height: 170px;
+        min-height: 170px;
+        max-height: 170px;
+        margin-right: 18px;
+        border-radius: 18px;
+        text-align: center;
+    }
+    .plz-last-entry-item .plz-last-entry-user-pic {
+        display: inline-block;
+        margin: 18px auto 10px auto;
+        width: 85px;
+        min-width: 85px;
+        max-width: 85px;
+        height: 85px;
+        min-height: 85px;
+        max-height: 85px;
+    }
+</style>
+    <style type="text/css">
+    .plz-plizi-mobile[data-v-1469e09e] {
+        position: relative;
+        margin-top: 25px;
+        height: 212px; /* 183px */
+        min-height: 212px;
+        max-height: 212px;
+    }
+    .plz-plizi-mobile .plz-for-mobile[data-v-1469e09e] {
+        margin-left: 39px; /* @TGA - иначе немного неровно если смотреть на верхний блок */
+        margin-top: 40px;
+        width: 120px;
+        max-width: 120px;
+    }
+    .plz-social-apps[data-v-1469e09e] {
+        margin-top: 25px;
+    }
+    .plz-social-apps .btn-social-app[data-v-1469e09e] {
+    }
+    .plz-plizi-mobile .bg-wrapper[data-v-1469e09e] {
+        display: block;
+        position: absolute;
+        left: 252px;
+        top: 63px;
+
+        /*background-color: yellow;*/
+        background-image: url("images/plizi-mobile-bg.png");
+        background-position: 0px 0px;
+        background-repeat: no-repeat;
+        width: 266px;
+        min-width: 266px;
+        max-width: 266px;
+        height: 149px;
+        min-height: 149px;
+        max-height: 149px;
+    }
+</style>
+    <style type="text/css">
+    .loginPage-wrap {
+        height: 100%;
+        min-height: 800px;
+    }
+</style>
+    <style type="text/css">
+    .plz-favorit-friends {
+    }
+    .plz-favorit-friends .plz-ff-title {
+    }
+    .plz-favorit-friend-userpic {
+        display: block;
+        position: relative;
+        width: 48px;
+        min-width: 48px;
+        max-width: 48px;
+        height: 48px;
+        min-height: 48px;
+        max-height: 48px;
+        margin-right: 10px;
+    }
+    .plz-favorit-friend-userpic .plz-favorit-userpic {
+    }
+    .plz-favorit-friend-userpic .plz-favorit-isonline {
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: 0px;
+        bottom: 0px;
+    }
+    .plz-favorit-friend-title .plz-favorit-friend-status {
+    }
+</style>
+    <style type="text/css">
+    .plz-short-friends {
+    }
+    .plz-short-friends .plz-ff-title {
+    }
+    .plz-short-friend-userpic {
+        display: block;
+        position: relative;
+        width: 48px;
+        min-width: 48px;
+        max-width: 48px;
+        height: 48px;
+        min-height: 48px;
+        max-height: 48px;
+        margin-right: 10px;
+    }
+    .plz-short-friend-userpic .plz-short-userpic {
+    }
+    .plz-short-friend-userpic .plz-short-isonline {
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: 0px;
+        bottom: 0px;
+    }
+    .plz-short-friend-title .plz-short-friend-status {
+    }
+</style>
+    <style type="text/css">
+    .plz-profile-photos-list {
+        overflow-x: hidden;
+    }
+
+    /** класс для последней фотки **/
+    .plz-profile-photos-list .plz-profile-photo-item:last-child {
+        border: 1px solid red;
+    }
+</style>
+    <style type="text/css">
+    :root {
+        --user-pic-size: 32px;
+        --isonline-pic-size: 10px;
+    }
+    .chat-list-user.media {
+        position: relative;
+    }
+    .chat-list-user.media .chat-list-user-pic {
+        width: var(--user-pic-size);
+        min-width: var(--user-pic-size);
+        max-width: var(--user-pic-size);
+        height: var(--user-pic-size);
+        min-height: var(--user-pic-size);
+        max-height: var(--user-pic-size);
+        border-radius: var(--user-pic-size);
+        margin-right: 10px;
+        /*background-color: yellow;*/
+        /*border: 1px solid red;*/
+    }
+    .chat-list-user .wide-list.chat-list-user-isonline {
+        display: block;
+        position: absolute;
+        left: calc(var(--user-pic-size) + 8px);
+        top: calc(var(--user-pic-size));
+        z-index: 100;
+    }
+</style>
+    <style type="text/css">
+        .form-control.chat-search-input[data-v-41cc0fb5] {
+        background-image: url("images/chat-search-loupe.png");
+        background-position: 90% center;
+        background-repeat: no-repeat;
+    }
+    </style>
+    <style type="text/css">
+    :root {
+        --chat-message-radius: 20px;
+        --chat-message-margin: 12px;
+        --chat-message-padding: 12px;
+    }
+    .message-item.my-message, .message-item.companion-message {
+        display: block;
+        max-width: 80%;
+        margin: var(--chat-message-margin);
+    }
+    .message-item.my-message.compact-message, .message-item.companion-message.compact-message {
+        margin-top: calc(var(--chat-message-margin) / 4);
+        margin-bottom: 0px;
+    }
+    .message-item.my-message {
+        display: block;
+        float: right;
+    }
+    .message-item.my-message .message-body {
+        background-color: #3d51de;
+        border-radius: var(--chat-message-radius) var(--chat-message-radius) 0px var(--chat-message-radius);
+        padding: var(--chat-message-padding);
+
+        display: block;
+        float: right;
+    }
+    .message-item.companion-message {
+        display: block;
+        float: left;
+    }
+    .message-item.companion-message .message-body {
+        background-color: white;
+        border: 1px solid grey;
+        border-radius: var(--chat-message-radius) var(--chat-message-radius) var(--chat-message-radius) 0px;
+        padding: var(--chat-message-padding);
+
+        display: block;
+        float: left;
+    }
+    .message-item .message-user-pic {
+        width: 32px;
+        height: 32px;
+        display: block;
+    }
+    .message-item.companion-message .message-user-pic {
+        margin-right: 10px;
+        float: left;
+    }
+    .message-item.my-message .message-user-pic {
+        margin-left: 10px;
+        float: right;
+    }
+    .message-item.companion-message .message-text {
+        display: block;
+        float: left;
+        color: #363636;
+    }
+    .message-item.my-message .message-text {
+        display: block;
+        float: right;
+        color: white;
+    }
+    .message-item.companion-message .message-time {
+        display: block;
+        float: right;
+        padding-left: 10px;
+        color: #C1BFBF;
+    }
+    .message-item.my-message .message-time {
+        display: block;
+        float: left;
+        padding-right: 10px;
+        color: #DEE2FD;
+    }
+
+</style>
+    <style type="text/css">
+    :root {
+        --chat-message-radius: 20px;
+        --chat-message-margin: 12px;
+        --chat-message-padding: 12px;
+    }
+    .message-item.my-message, .message-item.companion-message {
+        display: block;
+        max-width: 80%;
+        margin: var(--chat-message-margin);
+    }
+    .message-item.my-message.compact-message, .message-item.companion-message.compact-message {
+        margin-top: calc(var(--chat-message-margin)/4);
+        margin-bottom: 0px;
+    }
+    .message-item.my-message {
+        display: block;
+        float: right;
+    }
+    .message-item.my-message .message-body {
+        background-color: #3d51de;
+        border-radius: var(--chat-message-radius) var(--chat-message-radius) 0px var(--chat-message-radius);
+        padding: var(--chat-message-padding);
+
+        display: block;
+        float: right;
+    }
+    .message-item.companion-message {
+        display: block;
+        float: left;
+    }
+    .message-item.companion-message .message-body {
+        background-color: white;
+        border: 1px solid grey;
+        border-radius: var(--chat-message-radius) var(--chat-message-radius) var(--chat-message-radius) 0px;
+        padding: var(--chat-message-padding);
+
+        display: block;
+        float: left;
+    }
+    .message-item .message-user-pic {
+        width: 32px;
+        height: 32px;
+        display: block;
+    }
+    .message-item.companion-message .message-user-pic {
+        margin-right: 10px;
+        float: left;
+    }
+    .message-item.my-message .message-user-pic {
+        margin-left: 10px;
+        float: right;
+    }
+    .message-item.companion-message .message-text {
+        display: block;
+        float: left;
+        color: #363636;
+    }
+    .message-item.my-message .message-text {
+        display: block;
+        float: right;
+        color: white;
+    }
+    .message-item.companion-message .message-time {
+        display: block;
+        float: right;
+        padding-left: 10px;
+        color: #C1BFBF;
+    }
+    .message-item.my-message .message-time {
+        display: block;
+        float: left;
+        padding-right: 10px;
+        color: #DEE2FD;
+    }
+
+</style>
+    <style type="text/css">
+    .navbar.plz-navbar {
+        height: 56px;
+        min-height: 56px;
+        max-height: 56px;
+        padding: 0px;
+    }
+    .navbar.plz-navbar .top-search.form-control {
+        color: #A3A8B9;
+
+        /*width: 100%; !* 534px *!*/
+        width: 534px;
+        height: 40px;
+        min-height: 40px;
+        max-height: 40px;
+        background-color: #EEEFF4;
+
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        border-width: 0px;
+        padding: 0px 30px;
+
+        background-image: url("images/top-search-icon.png");
+        background-repeat: no-repeat;
+        background-position: 490px center;
+    }
+    .navbar.plz-navbar .to-english.btn.btn-link {
+        display: block;
+        color: #AFB4C5;
+        float: right;
+        line-height: 56px;
+        height: 56px;
+    }
+
+</style>
+    <style type="text/css">
+    .auth-navbar.navbar.fixed-top {
+        background-color: #F7F8FC;
+    }
+</style>
+    <style type="text/css">
+    .navbar.plz-footer {
+        background-color: transparent;
+        margin-top: 46px;
+    }
+    .navbar.plz-footer .nav-link.plz-copy {
+        color: #B6BEFD;
+    }
+    .navbar.plz-footer .nav-link {
+        color: #F7F8FC;
+    }
+    .navbar.plz-footer .plz-bottom-link {
+        height: 40px;
+        line-height: 40px;
+    }
+
+</style>
+    <style type="text/css">
+        body {
+    background-color: #F7F8FC;
+}
+body.LoginPage, body.HomePage {
+    background-image: url("images/plizi-bg-exp.svg");
+    /*background-image: url("/images/blue-wave.png");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+body.LoginPage > .container-fluid, body.HomePage > .container-fluid {
+    max-width: 1008px;
+}
+body.LoginPage .modal-dialog-centered {
+    width: 100%;
+    max-width: 404px;
+}
+body.LoginPage .modal-body {
+    padding: 35px 60px 50px;
+}
+#contentContainer {
+    margin-top: 70px;
+    min-height: 200px;
+}
+.btn.disabled, .btn:disabled {
+    opacity: 1.0;
+}
+.icon-40 {
+    display: block;
+    float: right;
+    width: 40px;
+    max-width: 40px;
+    height: 40px;
+    max-height: 40px;
+    margin: 15px 10px 0px 0px;
+}
+.icon-40 > img {
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.icon-registration {
+    display: inline-block;
+    vertical-align: middle;
+    background: url("images/icons/icon-registration.png") 50% 50% no-repeat;
+    width: 127px;
+    height: 111px;
+}
+.icon-user {
+    display: inline-block;
+    vertical-align: middle;
+    background: url("images/icons/icon-user.png") 50% 50% no-repeat;
+    width: 16px;
+    height: 16px;
+}
+.icon-letter {
+    display: inline-block;
+    vertical-align: middle;
+    background: url("images/icons/icon-letter.png") 50% 50% no-repeat;
+    width: 17px;
+    height: 12px;
+}
+.icon-calendar {
+    display: inline-block;
+    vertical-align: middle;
+    background: url("images/icons/icon-calendar.png") 50% 50% no-repeat;
+    width: 17px;
+    height: 18px;
+}
+.icon-modal-close {
+    display: inline-block;
+    vertical-align: middle;
+    background: url("images/icons/icon-modal-close.png") 50% 50% no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.bg-white-br20 {
+    background-color: white;
+    border-radius: 20px;
+}
+.plz-br20 {
+    border-radius: 20px;
+}
+.form-control.lr-input {
+    border-radius: 0px;
+    width: 278px;
+    max-width: 278px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 0px 0px 1px 0px;
+    border-color: #d7d7d7;
+    background-color: transparent;
+}
+.form-control.lr-input:focus,
+.form-control.lr-input:active {
+    /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);*/
+    box-shadow: none;
+    outline: 0 none;
+    border-color: #000;
+}
+.btn.plz-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+
+    width: 278px;
+    max-width: 278px;
+    height: 40px;
+    line-height: 34px;
+    border-radius: 20px;
+    text-align: center;
+
+    box-shadow: none;
+    outline: 0 none;
+    transition: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn.plz-btn-primary {
+    background-color: #3D51DE;
+    color: white;
+}
+.btn.plz-btn-outline {
+    color: #3D51DE;
+    background-color: white;
+    border-width: 2px;
+    border-color: #3D51DE;
+}
+.modal:before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 96px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("images/icons/icon-modal-close.png") 50% 50% no-repeat;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.modal.show {
+    display: block;
+}
+
+</style>
+    <script charset="utf-8" src="js/main.913a0d9bb66b26483f89.hot-update.js"></script>
+</head>
+<body class="LoginPage">
+
+<div class="loginPage-wrap d-lg-flex align-items-lg-center justify-content-lg-center ">
+    <div class="flex-lg-column align-items-lg-center justify-content-lg-center">
+        <div class="container-fluid px-0 my-0 pt-3">
+            <nav class="navbar plz-navbar">
+                <div class="container-fluid px-0 py-0 --w-100 my-0">
+                    <div class="row w-100 px-0 mx-auto">
+                        <div class="col-2">
+                            <a href="#/" class="navbar-brand mr-auto router-link-active"><img src="images/plizi-icon-56.png" alt="Plizi"></a>
+                        </div>
+                        <div class="col-7">
+                            <form class="form-inline my-0 h-100">
+                                <input id="topSearch" type="search" placeholder="Поиск" aria-label="Поиск" class="top-search form-control">
+                                <button type="submit" class="d-none btn btn-outline-success">Search</button>
+                            </form>
+                        </div>
+                        <div class="col-3 px-0 mr-0">
+                            <div class="w-100 h-100 --d-flex --flex-row-reverse"><a id="toEnglish" href="#toEnglish" class="to-english btn btn-link">Switch to English</a></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!---->
+            <main id="contentContainer" role="main" class="container-fluid pb-sm-5 pb-md-5">
+                <div class="row">
+                    <div class="col-5 px-0">
+                        <div id="loginForm" class="bg-white-br20 plz-login-form h-100">
+                            <div class="card-body">
+                                <form novalidate="novalidate">
+                                    <div class="form-group">
+                                        <label for="userEmail" class="d-none">Ваш E-mail</label>
+                                        <input type="text" id="userEmail" placeholder="Ваш E-mail" class="lr-input lr-input-email form-control --is-invalid">
+                                        <div class="invalid-feedback" style="">
+                                            <p class="text-danger">Укажите свой е-мейл</p>
+                                            <!---->
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="d-none">Пароль</label>
+                                        <input type="password" id="password" placeholder="Пароль" class="lr-input lr-input-password form-control">
+                                        <div class="invalid-feedback" style="display: none;">
+                                            <p class="text-danger">Укажите свой пароль</p>
+                                            <!---->
+                                            <!---->
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div class="form-group">
+                                        <button id="btnLogin" type="button" disabled="disabled" class="btn-login btn plz-btn plz-btn-primary">Войти</button>
+                                        <button id="btnRegistration" type="button" class="btn-registration btn plz-btn plz-btn-outline">Регистрация</button>
+                                    </div>
+                                    <div class="plz-import-socnet form-group text-center">
+                                        <h6>Импорт аккаунта</h6>
+                                        <div class="plz-import-socnet-text">Импортируйте свой аккаунт из списка следующих социальных сетей</div>
+                                        <div class="plz-import-socnet-btns d-flex justify-content-center">
+                                            <div class="mx-3"><a href="#twitter" title="Twitter" class="plz-socnet-btn"><i class="fab fa-twitter fa-2x mt-2"></i></a></div>
+                                            <div class="mx-3"><a href="#vk" title="VKontakte" class="plz-socnet-btn"><i class="fab fa-vk fa-2x mt-2"></i></a></div>
+                                            <div class="mx-3"><a href="#fb" title="Facebook" class="plz-socnet-btn"><i class="fab fa-facebook-f fa-2x mt-2"></i></a></div>
+                                            <div class="mx-3"><a href="#instagram" title="Instagram" class="plz-socnet-btn"><i class="fab fa-instagram fa-2x mt-2"></i></a></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true" class="modal " style=" background-color: rgba(0, 0, 0, 0.7);">
+                                <div role="document" class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-white-br20">
+                                        <div class="modal-body">
+                                            <div id="loginForm">
+                                                <div class="text-center">
+                                                    <h5>Быстрая регистрация</h5>
+                                                    <div class="text-center"><i class="icon icon-registration"></i></div>
+                                                </div>
+                                                <form id="registrationForm" novalidate="novalidate">
+                                                    <div class="form-group --has-error"><i class="icon icon-user"></i>
+                                                        <label for="firstName" class="d-none">Ваше имя</label>
+                                                        <input type="text" id="firstName" placeholder="Ваше имя" class="lr-input form-control --is-invalid">
+                                                        <div class="invalid-feedback" style="">
+                                                            <p class="text-danger">Укажите как Вас зовут</p>
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group"><i class="icon icon-user"></i>
+                                                        <label for="lastName" class="d-none">Ваша фамилия</label>
+                                                        <input type="text" id="lastName" placeholder="Ваша фамилия" class="lr-input form-control">
+                                                        <div class="invalid-feedback" style="display: none;">
+                                                            <p class="text-danger">Укажите свою фамилию</p>
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group"><i class="icon icon-letter"></i>
+                                                        <label for="userEmail" class="d-none">Ваш E-mail</label>
+                                                        <input type="text" id="userEmail" placeholder="Ваш E-mail" class="lr-input form-control">
+                                                        <div class="invalid-feedback" style="display: none;">
+                                                            <p class="text-danger">Укажите свой е-мейл</p>
+                                                            <!---->
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group --has-success"><i class="icon icon-calendar"></i>
+                                                        <label for="userBirth" class="d-none">Дата рождения</label>
+                                                        <input type="text" id="userBirth" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}" placeholder="Дата рождения" class="lr-input form-control --is-valid">
+                                                        <div class="invalid-feedback" style="display: none;">
+                                                            <p class="text-danger">Укажите дату в формате ДД.MM.ГГГГ</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button id="btnRegistration" type="button" disabled="disabled" class="btn plz-btn plz-btn-primary">Регистрация</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7 pr-0 pb-0" style="padding-left: 24px;">
+                        <div id="latestEntries" class="plz-latest-entries bg-white-br20">
+                            <h6>Вы недавно входили в аккаунт с этого компьютера</h6>
+                            <div class="plz-last-entries-list d-flex justify-content-start">
+                                <div class="plz-last-entry-item"><img src="images/last-entries/vladislav.png" alt="Владислав Браташ" class="plz-last-entry-user-pic">
+                                    <div class="d-inline-block text-center mx-auto px-4 my-0"><a href="#/profile" class="text-body">Владислав Браташ</a></div>
+                                </div>
+                                <div class="plz-last-entry-item"><img src="images/icons/add-account.png" alt="Добавить аккаунт" class="plz-last-entry-user-pic">
+                                    <div class="d-inline-block text-center mx-auto px-4 my-0"><a href="#" class="text-black-50">Добавить аккаунт</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-v-1469e09e="" id="pliziMobile" class="plz-plizi-mobile bg-white-br20 d-flex justify-content-between align-items-start">
+                            <div data-v-1469e09e="" class="plz-for-mobile">
+                                <h5 data-v-1469e09e="" class="w-75"><b data-v-1469e09e="">Plizi для мобильных устройств</b></h5>
+                                <div data-v-1469e09e="" class="plz-social-apps d-flex justify-content-start">
+                                    <div data-v-1469e09e="" class="mx-3">
+                                        <a data-v-1469e09e="" href="#apple" title="Apple" class="btn-social-app"><img data-v-1469e09e="" src="images/icons/app-ios-icon.png" alt="ios"></a>
+                                    </div>
+                                    <div data-v-1469e09e="" class="mx-3">
+                                        <a data-v-1469e09e="" href="#android" title="Android" class="btn-social-app"><img data-v-1469e09e="" src="images/icons/app-andoid-icon.png" alt="android"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-v-1469e09e="" class="bg-wrapper w-50 h-100 mx-auto">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="navbar plz-footer w-100 px-0 mx-0 d-sm-none d-md-none d-lg-block d-xl-block">
+                <div class="container-fluid px-0 m-0">
+                    <div class="plz-bottom-links w-100 d-flex flex-row justify-content-start align-items-center">
+                        <div class="plz-bottom-link">
+                            <div class="nav-item text-center"><a href="#/about" class="nav-link pl-0 ml-0">О проекте</a></div>
+                        </div>
+                        <div class="plz-bottom-link">
+                            <div class="nav-item"><a href="#/rules" class="nav-link">Правила</a></div>
+                        </div>
+                        <div class="plz-bottom-link">
+                            <div class="nav-item"><a href="#/advertisement" class="nav-link">Реклама</a></div>
+                        </div>
+                        <div class="plz-bottom-link">
+                            <div class="nav-item"><a href="#/for-developers" class="nav-link">Для разработчиков</a></div>
+                        </div>
+                        <div class="plz-bottom-link">
+                            <div class="nav-item"><a href="#/switch-language" class="nav-link">Русский <i class="fas fa-chevron-down ml-1"></i></a></div>
+                        </div>
+                        <div class="plz-bottom-link align-self-end ml-auto mr-0">
+                            <div class="nav-item"><a href="#/switch-language" class="nav-link plz-copy pr-0">© Plizi 2020</a></div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+<script src="js/app.js" type="application/javascript"></script>
+
+<script>
+    $('#btnRegistration').on('click', function () {
+        $('.modal').addClass('show');
+    })
+
+    $('body').on('click', function (e) {
+        console.log($(e.target).attr('class'));
+
+        if(!$(e.target).is('.modal-body *, #btnRegistration')){
+            $('.modal').removeClass('show');
+        }
+    })
+</script>
+
+
+</body></html>

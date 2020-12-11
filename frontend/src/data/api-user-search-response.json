@@ -1,0 +1,62 @@
+{
+    "data": {
+        "list": [
+            {
+                "id": 25,
+                "lastActivity": 1588324712,
+                "isOnline": false,
+                "profile": {
+                    "firstName": "Alex",
+                    "lastName": "Bashmakow",
+                    "sex": "n",
+                    "birthday": "1976-02-02",
+                    "location": null,
+                    "relationshipId": null,
+                    "userPic": ""
+                }
+            },
+            {
+                "id": 27,
+                "lastActivity": 1586764188,
+                "isOnline": false,
+                "profile": {
+                    "firstName": "Alexey",
+                    "lastName": "Bashmakow",
+                    "sex": "n",
+                    "birthday": "1976-02-02",
+                    "location": null,
+                    "relationshipId": null,
+                    "userPic": ""
+                }
+            },
+            {
+                "id": 28,
+                "lastActivity": 1588324544,
+                "isOnline": false,
+                "profile": {
+                    "firstName": "Alexey Targa",
+                    "lastName": "Bashmakow",
+                    "sex": "m",
+                    "birthday": "1976-02-02",
+                    "location": null,
+                    "relationshipId": 1,
+                    "userPic": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/images\/originals\/yu1IF4L6zOuqz157FN20KH5qE1lGRUmKmjS5dHKn.png"
+                }
+            },
+            {
+                "id": 43,
+                "lastActivity": null,
+                "isOnline": false,
+                "profile": {
+                    "firstName": "Targa",
+                    "lastName": "Pasha",
+                    "sex": "n",
+                    "birthday": null,
+                    "location": null,
+                    "relationshipId": null,
+                    "userPic": ""
+                }
+            }
+        ]
+    }
+}

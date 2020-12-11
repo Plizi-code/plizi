@@ -1,0 +1,22 @@
+.profile-filter {
+
+    &-links {
+
+        span {
+            display: block;
+            font-size: 13px;
+            color: #939292;
+            border-bottom: 2px solid transparent;
+            cursor: pointer; /** у <a> нету href наверное поэтому палец не показыватся, приходится фОрсить **/
+            transition: .4s;
+            &:hover {
+                background-color: $bgHover;
+            }
+        }
+
+        .active {
+            border-bottom: 2px solid #576DF6;
+            color: #2F2F2F;
+        }
+    }
+}

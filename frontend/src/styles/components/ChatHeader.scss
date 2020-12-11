@@ -1,0 +1,96 @@
+
+#chatHeader {
+    height: 76px;
+
+    .btn-search {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        padding-right: 1rem;
+        box-shadow: none;
+        border: 0;
+    }
+
+    .vc-popover-content-wrapper {
+        left: -17px !important;
+    }
+
+    .icon-user-plus {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &-plus {
+            fill: #bfc0c3;
+        }
+    }
+
+    .btn {
+        &:hover {
+            .fa-times-circle {
+                color: $blueBtnHover;
+            }
+        }
+    }
+}
+
+.in-shadow {
+    box-shadow: 0 2px 54px 0 rgba(0, 0, 0, 0.07);
+}
+
+.ChatsListPage {
+    #chatHeader {
+        border-radius: 0 20px 0 0;
+    }
+}
+
+#txtFindInChat {
+    color: #A3A8B9;
+    height: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    background-color: #EEEFF4;
+    border-radius: 20px;
+    border-width: 0;
+    padding: 0 30px;
+    line-height: 20px;
+    outline: none;
+    box-shadow: none;
+    transition: .4s;
+
+    &::placeholder {
+        font-size: $placeholderSize;
+        color: $placeholderColor;
+    }
+
+    &:focus {
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+}
+
+.chatHeader-title {
+    font-size: 13px;
+    font-weight: 700;
+    //white-space: nowrap;
+}
+.chatHeader-subtitle {
+    font-size: 13px;
+    color: #9a9a9a;
+}
+
+
+$attendeeAdminColor: #F8D209;
+
+.plz-chat-attendee-admin {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    color: $attendeeAdminColor;
+    z-index: 1;
+}

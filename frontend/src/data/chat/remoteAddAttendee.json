@@ -1,0 +1,52 @@
+{
+    "data": {
+        "id": "5ecbe9f09052da57ac5cd552",
+        "name": "Евгения Васильев",
+        "lastMessageText": null,
+        "lastMessageDT": null,
+        "isRead": false,
+        "isLastFromMe": false,
+        "attendees": [
+            {
+                "id": "5eb3f2ea5566227d7440ccaf",
+                "lastActivity": 1590470551,
+                "userPic": "https://plizibuck.s3.eu-central-1.amazonaws.com/images/originals/thumbs/7dcefcc8-e410-481b-a00a-60222337f90b.jpg",
+                "firstName": "Яна",
+                "lastName": "Шараповa",
+                "isOnline": false,
+                "isAdmin": false,
+                "sex": "f"
+            },
+            {
+                "id": "5eb3f3045566227d7440cd04",
+                "lastActivity": 1589908365,
+                "userPic": "https://i.picsum.photos/id/923/500/500.jpg",
+                "firstName": "Евгения",
+                "lastName": "Васильев",
+                "isOnline": false,
+                "isAdmin": false,
+                "sex": "f"
+            },
+            {
+                "id": "5eb3f3075566227d7440cd0d",
+                "lastActivity": 1590393399,
+                "userPic": "https://plizibuck.s3.eu-central-1.amazonaws.com/images/originals/thumbs/8c5dba34-37dd-49aa-833f-de8eca93bbc4.jpg",
+                "firstName": "Евгения",
+                "lastName": "Авдеевa",
+                "isOnline": false,
+                "isAdmin": false,
+                "sex": "m"
+            },
+            {
+                "id": "5eb3f33c5566227d7440cdc8",
+                "lastActivity": 1590408385,
+                "userPic": "https://plizibuck.s3.eu-central-1.amazonaws.com/images/originals/thumbs/71a0b3d4-c5e3-49f8-9fc7-22d37820df56.jpg",
+                "firstName": "Влад",
+                "lastName": "Мамонтов",
+                "isOnline": false,
+                "isAdmin": false,
+                "sex": "m"
+            }
+        ]
+    }
+}

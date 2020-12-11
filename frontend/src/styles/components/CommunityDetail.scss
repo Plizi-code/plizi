@@ -1,0 +1,177 @@
+$communityPrimaryImage: 70px;
+
+
+.plz-community {
+    &-header {
+        min-height: 320px;
+        height: auto;
+
+        &-details {
+            width: calc(100% - 200px);
+        }
+        &-pic {
+            position: relative;
+            height: 210px;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                min-height: 100%;
+            }
+        }
+        &-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+        }
+
+        &-logo{
+            position: relative;
+            width: $communityPrimaryImage;
+            height: $communityPrimaryImage;
+            min-width: $communityPrimaryImage;
+            text-align: center;
+
+            border-radius: $communityPrimaryImage/2;
+            overflow: hidden;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: auto;
+                height: 100%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &-title {
+            font-size: 14px;
+            color: $textColor;
+            font-weight: 600;
+
+            &[href] {
+                color: $textColor;
+            }
+            a {
+                font-size: 14px;
+                color: $textColor;
+                font-weight: 600;
+            }
+        }
+        &-desc {
+            font-size: 13px;
+            color: $textGreyColor;
+            word-break: break-word;
+
+            &[href] {
+                color: $textGreyColor;
+            }
+        }
+        .btn {
+            text-transform: uppercase;
+            background-color: transparent;
+            height: 34px;
+            cursor: pointer;
+            font-size: 11px;
+            font-weight: 600;
+            color: #6f7487;
+            border-radius: 0;
+            border: 0;
+            box-shadow: none;
+            transition: .4s;
+
+            &:hover {
+                background-color: #a6a7a9;
+                color: #fff;
+                .ps-dot {
+                    background-color: #ffffff;
+                }
+                .icon-add-user  {
+                    fill: $iconHoverColor;
+                }
+            }
+        }
+        .icon-add-user {
+            display: inline-block;
+            height: 16px;
+        }
+    }
+
+    &-info {
+        &-desc {
+            font-size: 13px;
+            color: $textGreyColor;
+            word-break: break-word;
+
+            &[href] {
+                color: $textColor;
+            }
+         }
+    }
+
+    &-subscribe {
+        width: 180px;
+        max-width: 100%;
+        border: 2px solid #f0f0f0;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    &-members-item {
+        .plz-favorit-userpic {
+            width: 32px;
+            min-width: 32px;
+            height: 32px;
+        }
+    }
+    &.file-label{
+        cursor: pointer;
+    }
+    &-participants {
+        &-title {
+            font-size: 14px;
+             color: $textColor;
+            &[href] {
+                color: $textColor;
+            }
+        }
+        &-subtitle {
+            font-size: 12px;
+             color: $textGreyColor;
+            &[href] {
+                color: $textGreyColor;
+            }
+        }
+    }
+
+}
+
+.community-options {
+    &-link {
+        display: block;
+        color: #ffffff;
+        transition: .4s;
+
+        &:hover {
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #ffffff
+        }
+
+        .counter-info {
+            position: static;
+            margin-left: 5px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .fa,
+        .fas {
+            width: 22px;
+        }
+    }
+}
+

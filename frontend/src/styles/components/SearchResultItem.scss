@@ -1,0 +1,133 @@
+
+$srUserPicSize: 80px;
+$srItemTimeColor: #9A9A9A;
+$srItemNameColor: #363636;
+$srItemOnlineColor: #9FCD48;
+$srItemOfflineColor: #CACAC9;
+
+.plizi-sr-item-user {
+    border-bottom: 1px solid #ebebeb;
+    transition: .4s;
+    &:hover {
+        background-color: #e6e7eb !important;
+    }
+    &:last-child {
+        border-bottom: 0;
+    }
+    .user-friend-desc {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.plizi-sr-item {
+    cursor: pointer;
+
+    &-pic {
+        display: inline-block;
+        position: relative;
+        height: $srUserPicSize;
+        width: $srUserPicSize;
+        min-width: $srUserPicSize;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 100%;
+            width: auto;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-isonline {
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: 10px;
+        bottom: 0;
+        background-color: $srItemOnlineColor;
+        border: 1px solid white;
+        border-radius: 100%;
+    }
+
+    &-isoffline {
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: 10px;
+        bottom: 0px;
+        background-color: $srItemOfflineColor;
+        border: 1px solid white;
+        border-radius: 100%;
+    }
+    &-body {
+        width: calc(100% - 80px - 15px);
+
+        &-top {
+            time {
+                font-size: 11px;
+                color: $srItemTimeColor; // add color to var
+            }
+        }
+    }
+
+    .plizi-community-btn {
+        height: 32px;
+        width: 120px;
+        line-height: 1.7;
+        font-size: 11px;
+        text-transform: uppercase;
+        color: $postTextColor;
+        font-weight: 700;
+        border: 2px solid $blueBtn;
+        transition: .4s;
+
+        &:hover {
+            background-color: $blueBtn;
+            color: #ffffff;
+            box-shadow: 0 5px 18px rgba(61, 81, 222, .4);
+        }
+    }
+
+    &-name {
+        font-size: 16px;
+        font-weight: 600;
+        color: $srItemNameColor;
+        line-height: 20px;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+            color: $srItemTimeColor;
+        }
+    }
+
+    &-desc {
+        font-size: 13px;
+        color: $srItemTimeColor;
+    }
+
+    &-details {
+        font-size: 12px;
+        color: $srItemNameColor;
+    }
+
+    &-actions {
+        &:hover {
+            .dots-vertical,
+            .dots-vertical:before,
+            .dots-vertical:after {
+                background-color: #363636;
+            }
+        }
+    }
+
+    .icon-message {
+        height: 20px;
+    }
+
+}

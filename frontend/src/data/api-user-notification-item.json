@@ -1,0 +1,17 @@
+{
+    "id": "3f95fa57-d7b1-44bd-8ee2-412b2888ac2e",
+    "data": {
+        "sender": {
+            "firstName": "Марианка",
+            "lastName": "Кабанова",
+            "sex": "n",
+            "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/9e3f7500-90ec-4f52-be8e-f4914b148ee5.png",
+            "lastActivity": 1589011641,
+            "id": "5eb3f2dd5566227d7440cc81"
+        },
+        "body": "User {0, string} updated profile photo",
+        "notificationType": "user.profile.image.updated"
+    },
+    "readAt": null,
+    "createdAt": 1589011672
+}

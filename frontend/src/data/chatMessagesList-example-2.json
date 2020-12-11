@@ -1,0 +1,16 @@
+{
+    "id": 4184,
+    "firstName": "Alex",
+    "lastName": "Dnipro Bashmakow",
+    "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/iJFrjNuVavlwFDN6saHLiweMY6Pdz16wCAU6uRza.jpeg",
+    "sex": "n",
+    "body": "<p>тест</p>",
+    "isMine": true,
+    "isRead": false,
+    "isEdited": false,
+    "createdAt": 1587720,
+    "updatedAt": 1587720,
+    "attachments": {},
+    "replyOn": null,
+    "isForward": false
+}

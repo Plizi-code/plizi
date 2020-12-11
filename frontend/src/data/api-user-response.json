@@ -1,0 +1,63 @@
+{
+    "data": {
+        "id": "5eb3f2e65566227d7440cca1",
+        "email": "brandyn96@paucek.net",
+        "isOnline": true,
+        "lastActivity": 1588969306,
+        "profile": {
+            "firstName": "Кеша",
+            "lastName": "Савельев",
+            "sex": "m",
+            "birthday": "1954-04-22",
+            "location": null,
+            "relationshipId": null,
+            "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/7f411941-6f2a-4dd9-a47b-e1273091b4fe.jpg",
+            "avatar": {
+                "id": 25,
+                "originalName": "news_w830_5e21f3a6ae68c930004605previewsotwlargedec23335.jpg",
+                "url": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/7f411941-6f2a-4dd9-a47b-e1273091b4fe.jpg",
+                "path": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/7f411941-6f2a-4dd9-a47b-e1273091b4fe.jpg",
+                "mimeType": "image/jpeg",
+                "size": 192318,
+                "image": {
+                    "original": {
+                        "width": 467,
+                        "height": 467,
+                        "path": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/originals/tiRDityd6CaPLKmBFaZWSN3a2zStmt1aeVSFno0y.jpeg"
+                    },
+                    "normal": {
+                        "width": 467,
+                        "height": 467,
+                        "path": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/normals/7f411941-6f2a-4dd9-a47b-e1273091b4fe.jpg"
+                    },
+                    "medium": {
+                        "width": 211,
+                        "height": 211,
+                        "path": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/mediums/7f411941-6f2a-4dd9-a47b-e1273091b4fe.jpg"
+                    },
+                    "thumb": {
+                        "width": 80,
+                        "height": 80,
+                        "path": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/thumbs/7f411941-6f2a-4dd9-a47b-e1273091b4fe.jpg"
+                    }
+                }
+            }
+        },
+        "privacySettings": {
+            "pageType": 2,
+            "writeMessagesPermissions": 2,
+            "postWallPermissions": 2,
+            "viewWallPermissions": 2,
+            "viewFriendsPermissions": 2,
+            "twoFactorAuthEnabled": 0,
+            "smsConfirm": 0
+        },
+        "stats": {
+            "notificationsCount": 8,
+            "unreadMessagesCount": 0,
+            "pendingFriendshipRequestsCount": 1,
+            "totalFriendsCount": 5
+        }
+    },
+    "channel": "5210cdac3fba7d35cabb32896f94c43b9b0a2e3b"
+}

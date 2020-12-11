@@ -1,0 +1,22 @@
+{
+    "chatId": "5eca2238dab2650e106eb6d2",
+    "message": {
+        "id": "5eca570258a4607aac019f25",
+        "firstName": "Евгения",
+        "lastName": "Авдеевa",
+        "userPic": "https://...de8eca93bbc4.jpg",
+        "userId": "5eb3f3075566227d7440cd0d",
+        "chatId": "5eca2238dab2650e106eb6d2",
+        "sex": "m",
+        "body": "<p>14-14</p>",
+        "isMine": false,
+        "isRead": null,
+        "isEdited": false,
+        "createdAt": 1590318850,
+        "updatedAt": 1590318850,
+        "replyOn": null,
+        "attachments": {
+            "list": []
+        }
+    }
+}

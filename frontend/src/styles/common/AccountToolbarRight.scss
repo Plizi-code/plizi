@@ -1,0 +1,14 @@
+
+#rightToolbar {
+    .rightToolbar-user {
+        transition: .4s;
+        &:hover {
+            background-color: $bgHover;
+        }
+    }
+    img {
+        width: 48px;
+        height: 48px;
+    }
+}
+

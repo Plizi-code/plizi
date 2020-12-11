@@ -1,0 +1,131 @@
+
+.icon {
+    display: inline-block;
+    vertical-align: top;
+    fill: #BFC0C3;
+    transition: .4s;
+
+    &:hover {
+        fill: #576DF6;
+    }
+}
+
+.icon-bell {
+    width: 26px;
+    height: 26px;
+}
+.icon-message {
+    width: 23px;
+    height: 23px;
+}
+.icon-friend {
+    height: 20px;
+    width: 24px;
+}
+
+.icon-fire {
+    width: 21px;
+    height: 26px;
+}
+.icon-atom {
+    width: 22px;
+    height: 22px;
+}
+.icon-play {
+    width: 22px;
+    height: 22px;
+}
+
+.icon-paper {
+    width: 22px;
+    height: 24px;
+}
+.icon-video {
+    width: 22px;
+    height: 21px;
+}
+
+.icon-star {
+    width: 24px;
+    height: 23px;
+}
+
+.icon-eye {
+    width: 16px;
+    height: 12px;
+}
+
+.icon-heard {
+    width: 16px;
+    height: 12px;
+}
+.icon-prev,
+.icon-next{
+    width: auto;
+    height: 7px;
+}
+
+.icon-play {
+    width: auto;
+    height: 20px;
+}
+
+.icon-zip {
+    width: 28px;
+    height: 28px;
+}
+.icon-checked-double {
+    height: 10px;
+    width: 18px;
+   fill: $lightGreen;
+}
+
+.icon-key {
+    height: 16px;
+    width: 16px;
+    background-image: url('../images/icon-key.png');
+}
+.icon-user {
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../images/icons/icon-user.png") 50% 50% no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-letter {
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../images/icons/icon-letter.png") 50% 50% no-repeat;
+    width: 17px;
+    height: 12px;
+}
+
+.icon-play-video {
+    height: 30px;
+    fill: transparent;
+}
+
+.icon-arrow-left,
+.icon-arrow-right {
+    height: 40px;
+}
+.icon-user-x {
+    //height: 20px;
+
+    &-del {
+        fill: red;
+    }
+}
+.icon-user-plus {
+    //height: 20px;
+
+    &-plus {
+        fill: green;
+    }
+}
+
+.icon-admin-add,
+.icon-admin-remove {
+    fill: #8f9298;
+}

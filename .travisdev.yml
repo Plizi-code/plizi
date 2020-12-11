@@ -1,0 +1,40 @@
+dist: Bionic
+#before_install:
+#  - sudo apt-get -y install build-essential
+install:
+  - curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+  - chmod +x ./kubectl
+  - sudo mv ./kubectl /usr/local/bin/kubectl
+  - mkdir ${HOME}/.kube
+  - echo "$KUBE_CONFIG" | base64 --decode > ${HOME}/.kube/config
+  -
+
+sudo: required #is required to use docker service in travis
+language: node_js #can be any language, just php for example
+node_js:
+  - 12.16.3
+#cache:
+#  npm: false
+services:
+  - docker # required, but travis uses older version of docker :(
+
+script:
+  - cd frontend
+  - npm install
+  - npm run prod
+  - docker --version  # document the version travis is using
+  - pip install --user awscli # install aws cli w/o sudo
+  - export PATH=$PATH:$HOME/.local/bin # put aws in the path
+  - mkdir ${HOME}/.aws
+  - echo "$AWS_CREDENTIALS" | base64 --decode > ${HOME}/.aws/credentials
+  - echo "$AWS_CONFIG" | base64 --decode > ${HOME}/.aws/config
+  - aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin 884088487044.dkr.ecr.eu-central-1.amazonaws.com
+  - cp docker/nginx/Dockerfile .
+  - docker build -t plizi_front .
+  - docker tag plizi_front 884088487044.dkr.ecr.eu-central-1.amazonaws.com/plizi_front:latest
+  - docker push 884088487044.dkr.ecr.eu-central-1.amazonaws.com/plizi_front:latest
+#  - echo "no tests!" # put your normal testing scripts here
+
+
+after_success:
+  - kubectl get pods -n kube-system

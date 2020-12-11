@@ -1,0 +1,165 @@
+
+$plzNavBarAvatarSize: 40px;
+$plzNavBarProfileColor: #A6A7A9;
+
+#authHeader {
+    background-color: #f7f8fc;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .05);
+    transition: .3s;
+
+    &.page-has-offset-top {
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+    }
+    .profile-menu {
+        .dropdown-item {
+            font-size: 12px;
+            opacity: .8;
+            transition: .4s;
+            padding: .5rem 0;
+
+            &.active,
+            &:hover {
+                opacity: 1;
+                background-color: transparent;
+            }
+        }
+        .dropdown-menu-btn {
+            box-shadow: none;
+            &:hover {
+                color: #212529;
+
+                .fa-chevron-down {
+                    color: #212529;
+                }
+            }
+            &[aria-expanded="true"] {
+              .fa-chevron-down {
+                  transform: rotate(180deg);
+              }
+            }
+        }
+    }
+    .fixed-top {
+        background-color: $plzBodyBG;
+    }
+    .fa-chevron-down {
+        transition: .4s;
+    }
+    .user-friend {
+        transition: .4s;
+
+        &:hover {
+            background-color: $bgHover;
+        }
+    }
+
+    .isFocused {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+
+        #topSearch  {
+            background-color: #FFFFFF;
+        }
+    }
+
+    #topSearch {
+        box-shadow: none;
+        border: 0;
+        outline: none;
+        transition: .4s;
+        &:focus {
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+        }
+    }
+    .btn-search {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        box-shadow: none;
+        border: 0;
+        outline: none;
+        &:hover {
+            svg {
+                fill: $iconHoverColor;
+            }
+        }
+    }
+
+    .router-link-active {
+        .icon {
+            fill: $iconHoverColor;
+        }
+    }
+
+}
+
+.plz-top-player {
+    .btn {
+        font-size: 10px;
+        color: #A5A9C4;
+    }
+    .btn-song {
+        font-size: 13px;
+    }
+}
+
+.profile-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: $plzNavBarProfileColor;
+
+    .profile-menu-opener {
+        font-size: 10px;
+        cursor: pointer;
+    }
+
+    .profile-menu-item,
+    .profile-menu-link {
+        position: relative;
+
+        span {
+            display: inline-block;
+            //line-height: $plzNavBarAvatarSize;
+            color: $plzNavBarProfileColor;
+            margin-right: 15px;
+            line-height: 1;
+        }
+
+        img {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        /* специально для индикации временного аватара */
+        img.default-avatar {
+            //border: 1px solid red;
+        }
+
+    }
+
+    .profile-menu-pic {
+        position: relative;
+        width: $plzNavBarAvatarSize;
+        height: $plzNavBarAvatarSize;
+        border-radius: $plzNavBarAvatarSize;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 100%;
+            width: auto;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.notifications-likes-dropdown {
+    &.hidden {
+        display: none;
+    }
+}

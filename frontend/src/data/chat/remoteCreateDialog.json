@@ -1,0 +1,32 @@
+{
+    "data": {
+        "id": "5eccffd09f5adb7fe71e4212",
+        "name": "Яна Шараповa",
+        "lastMessageText": null,
+        "lastMessageDT": null,
+        "isRead": false,
+        "isLastFromMe": true,
+        "attendees": [
+            {
+                "id": "5eb3f2ea5566227d7440ccaf",
+                "lastActivity": 1590470551,
+                "userPic": "https://plizibuck.s3.eu-central-1.amazonaws.com/images/originals/thumbs/7dcefcc8-e410-481b-a00a-60222337f90b.jpg",
+                "firstName": "Яна",
+                "lastName": "Шараповa",
+                "isOnline": false,
+                "isAdmin": false,
+                "sex": "f"
+            },
+            {
+                "id": "5eb3f3115566227d7440cd30",
+                "lastActivity": 1590491331,
+                "userPic": "https://plizibuck.s3.eu-central-1.amazonaws.com/images/originals/thumbs/29b80ee0-d3cd-4bff-888d-1751d72e771f.jpg",
+                "firstName": "Зоя",
+                "lastName": "Кириллов",
+                "isOnline": false,
+                "isAdmin": true,
+                "sex": "n"
+            }
+        ]
+    }
+}

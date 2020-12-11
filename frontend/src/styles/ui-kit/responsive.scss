@@ -1,0 +1,606 @@
+
+// rules for --px and low
+
+@media (max-width: 1200px) {
+    .plizi-community-item-body {
+        width: 100%;
+    }
+    .plizi-community-item-body-bottom .btn {
+        width: 100%;
+    }
+
+
+
+    .plz-gallery-description--footer {
+        .plz-editor-body {
+            width: 100%;
+        }
+
+        .plz-text-editor,
+        .plz-text-editor-form {
+            min-height: 150px;
+        }
+        .plz-text-editor-form {
+            width: calc(100% - 50px);
+        }
+        .plz-editor-btns {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            margin-top: 40px;
+            width: 40px;
+            flex-direction: column!important;
+        }
+
+    }
+}
+
+/*- md -*/
+@media (max-width: 992px) {
+    .plz-account-settings-body .multiselect__content-wrapper {
+        transform: translateX(-55%);
+    }
+    .plz-account-settings-body-field .fa-map-marker-alt {
+        left: 0;
+    }
+
+    $toolbarPicSize: 28px;
+
+    #toolbarLeftColor,
+    .hot-communities {
+        .add-new {
+            width: $toolbarPicSize;
+            min-width: $toolbarPicSize;
+            height: $toolbarPicSize;
+            .fa {
+                line-height: $toolbarPicSize;
+            }
+        }
+
+        img {
+            position: relative;
+            width: $toolbarPicSize;
+            height: $toolbarPicSize;
+            border-radius: 100%;
+            overflow: hidden;
+        }
+    }
+
+    .plizi-friend-item-pic {
+        width: 60px;
+        min-width: 60px;
+        height: 60px;
+        img {
+            width: 60px;
+            min-width: 60px;
+            height: 60px;
+            border-radius: 60px;
+        }
+    }
+
+    .is-chatPage .chat-page-height-body {
+        //height: calc(100vh - 240px);
+        height: auto;
+    }
+    .is-chatPage .chat-page-height-aside {
+        height: auto;
+        min-height: auto;
+    }
+
+    .chat-dialogs-list {
+        border: 0;
+        //height: calc(100vh - 140px);
+        //flex: 0 0 200px
+    }
+
+    #chatMain {
+        border: 1px solid $borderColor;
+        border-radius: 20px 20px 0 0;
+    }
+    #chatMessagesWrapper {
+        position: relative;
+        //height: 370px; //500
+        height: calc(100vh - 140px);
+        flex: 1 1 auto;
+
+        //&:after {
+        //    content: '';
+        //    position: absolute;
+        //    top: 0;
+        //    left: 0;
+        //    right: 0;
+        //    bottom: 0;
+        //    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
+        //    pointer-events: none;
+        //    border-radius: 20px;
+        //}
+    }
+    #chatMessagesWrapperBody {
+        position: relative;
+        flex: 1 1 auto;
+    }
+    #chatHeader {
+        border-top: 1px solid $borderColor;
+    }
+    .ChatsListPage #chatHeader {
+        border-radius: 0;
+    }
+
+    #chatMessagesBody {
+        //padding-bottom: 180px;
+
+        .chat-messages-scroll {
+            min-height: 115px;
+        }
+    }
+
+    .chat-pick-attendees-document {
+        padding-top: 15px;
+        align-items: flex-start;
+    }
+    .chat-members-scroll {
+        height: auto;
+        max-height: calc(100vh - 220px);
+        overflow: auto;
+    }
+
+    .plz-gallery-viewer-nav-btn {
+        height: 40px;
+    }
+
+    .plz-gallery-viewer-current  {
+        max-width: calc(100vw - 90px);
+        max-height: calc(100vh - 100px);
+    }
+
+    #watcherWrapper {
+        .dropdown-menu {
+            left: 50%;
+            right: auto;
+            transform: translateX(-42%);
+            max-width: 96vw;
+        }
+        .invitations-dropdown {
+            transform: translateX(-62%);
+        }
+        .notifications-likes-dropdown {
+            transform: translateX(-42%);
+        }
+
+        .notifications-likes-scroll {
+            max-width: 100%;
+        }
+    }
+
+
+    .plz-comments,
+    #communityEditor,
+    #profileWhatsNew {
+        .picker {
+            transform: translate(-80%, 40px) !important;
+        }
+    }
+
+    .modal:before {
+        right: 15px;
+    }
+
+}
+
+/*- md -*/
+@media (max-width: 769px) {
+
+    .plz-gallery {
+
+        &-viewer{
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            //height: 70vh;
+            height: calc(100vh - 121px);
+
+            &-current {
+                margin: 0 auto;
+                max-height: calc(100vh - 170px);
+            }
+        }
+        &-description {
+            width: 100%;
+            top: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            //height: 30vh;
+            height: 121px;
+
+            &-header-body {
+                display: none!important;
+            }
+        }
+    }
+}
+/*- md -*/
+@media (max-width: 767px) {
+    .LoginPage,
+    .UpdatePasswordPage,
+    .HomePage,
+    .ForDevelopersPage #guestPageWrapper,
+    .AdvertisementPage #guestPageWrapper,
+    .GuestSearchResultsPage #guestPageWrapper,
+    .RulesPage #guestPageWrapper,
+    .AboutPage #guestPageWrapper
+    {
+        #contentContainer {
+            padding-top: 76px;
+        }
+    }
+
+    #toolbarLeftGrey {
+        position: fixed;
+        width: 100%;
+        bottom: -1px;
+        z-index: 50;
+        left: 0;
+        right: 0;
+        background-color: #f7f8fc;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, .05);
+        margin: 0 !important;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+
+        a {
+            //box-shadow: 0 0 4px 0 rgba(0, 0, 0, .05);
+            &:hover {
+                //background-color: rgba(0, 0, 0, .05);
+                .icon {
+                    fill: $blueBtnHover
+                }
+            }
+        }
+    }
+
+    .hot-communities {
+        max-width: 100%;
+        overflow: auto;
+        padding-top: 5px;
+    }
+
+    #contentContainer {
+        padding-top: 65px;
+    }
+
+    .plz-account-settings-body .multiselect__content-wrapper {
+        transform: translateX(0);
+    }
+
+    #toolbarLeftColor {
+        .add-new {
+            width: 48px;
+            min-width: 48px;
+            height: 48px;
+            .fa {
+                line-height: 48px;
+            }
+        }
+
+        img{
+            position: relative;
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
+            overflow: hidden;
+        }
+    }
+
+    .is-chatPage {
+        .chat-page-height-aside {
+            display: none;
+        }
+        .chat-dialogs-list {
+            border: 0;
+            height: calc(100vh - 100px);
+            flex: 0 0 200px
+        }
+
+        #chatMessagesWrapper {
+            height: calc(100vh - 100px);
+        }
+
+        .message-attachments-z {
+            .plz-gallery-single,
+            .plz-gallery-wrap,
+            .plz-gallery{
+                height: auto;
+            }
+        }
+    }
+
+    .chat-pick-attendees-document {
+        padding-top: 30px;
+    }
+    .chat-members-scroll {
+        height: auto;
+        max-height: calc(100vh - 260px);
+        overflow: auto;
+    }
+
+
+    .plz-editor-body {
+        width: 100%;
+    }
+
+    .plz-text-editor,
+    .plz-text-editor-form {
+        min-height: 150px;
+    }
+    .plz-text-editor-form {
+        width: calc(100% - 50px);
+    }
+    .plz-editor-btns {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        margin-top: 40px;
+        width: 40px;
+    }
+
+
+    .plz-community-subscribe {
+        width: 100%;
+    }
+
+    .plz-post-item{
+        .plz-post-item-header,
+        .plz-post-item-body,
+        .plz-post-item-images,
+        .plz-post-item-footer {
+            padding: 0 15px;
+        }
+    }
+
+    $portraitFullHeightResponsive: 400px;
+    .plz-gallery {
+        height: $portraitFullHeightResponsive;
+
+        &-single,
+        &-wrap {
+            height: $portraitFullHeightResponsive;
+        }
+
+        &-single {
+            img {
+                height: $portraitFullHeightResponsive;
+            }
+        }
+        &-double {
+            img {
+                height: $portraitFullHeightResponsive;
+            }
+        }
+
+        &-image {
+            &-album {
+                &-2 {
+                    height: $portraitFullHeightResponsive / 2;
+                }
+                &-3 {
+                    height: $portraitFullHeightResponsive / 2;
+                }
+                &-third {
+                    height: $portraitFullHeightResponsive / 2;
+                }
+            }
+            &-portrait {
+                &-full {
+                    height: $portraitFullHeightResponsive;
+
+                    .plz-gallery-double {
+                        height: $portraitFullHeightResponsive / 2;
+                    }
+                }
+
+                &-half {
+                    height: $portraitFullHeightResponsive / 2;
+                }
+                &-third {
+                    height: $portraitFullHeightResponsive / 3;
+                }
+            }
+        }
+
+        &-double {
+            .plz-gallery-image-album-full {
+                height: $portraitFullHeightResponsive / 2;
+            }
+             //img {
+             //    height: $portraitFullHeightResponsive / 2;
+             //}
+         }
+
+    }
+
+    .video-player {
+        .video-js {
+            height: 400px;
+        }
+    }
+
+
+    #toolbarLeftGrey::after {
+        content: none;
+    }
+
+    .plz-community-header-details {
+        width: 100%;
+    }
+
+    .profile-filter {
+        &-links {
+            width: 100%;
+        }
+    }
+
+    .plz-footer .plz-bottom-link {
+        padding: .5rem 0;
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+            width: 50%;
+        }
+        &:nth-child(4),
+        &:nth-child(5){
+            width: 50%;
+        }
+        &:nth-child(6){
+            width: 100%;
+        }
+    }
+
+    .GuestSearchResultsPage,
+    .ForDevelopersPage,
+    .AdvertisementPage,
+    .RulesPage,
+    .AboutPage {
+        #pageWrapper {
+            .plz-footer {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+
+        .plz-guest-navbar {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    .ChatsListPage {
+        #toolbarLeftColor {
+            display: none!important;
+        }
+    }
+
+    #chatMain .ps__rail-x {
+        background-color: #eee;
+        opacity: 1;
+    }
+
+}/*- max-width: 767px -*/
+
+
+
+/*- sm -*/
+@media (max-width: 576px) {
+
+    .plz-latest-entries {
+        h6 {
+            padding-left: 0;
+        }
+        //&-list {
+            //padding: 0 10px;
+            //display: flex;
+            //justify-content: space-between;
+            //flex-wrap: wrap;
+        //}
+        &-item {
+            width: 180px;
+            min-width: 180px;
+            //margin-right: 0;
+        }
+    }
+    #pliziMobile .plizi-mobile {
+        min-height: 200px;
+    }
+    .modal {
+        min-height: 600px;
+
+        &:before {
+            right: 15px;
+            top: 10px;
+        }
+    }
+
+    .LoginPage,
+    .UpdatePasswordPage,
+    .HomePage {
+        .modal-body {
+            padding: 35px 20px 50px;
+        }
+    }
+
+    #authHeader {
+        .plz-top-watcher {
+            .icon {
+                height: 20px;
+                width: 20px;
+            }
+        }
+        .counter-info {
+            left: 80%;
+            top: 2px;
+        }
+    }
+
+    .plz-account-settings-body-field {
+        padding: 0;
+    }
+
+    #toolbarLeftColor {
+        overflow: auto;
+    }
+
+
+    #additionalBtns .btn,
+    .videos-filter-links,
+    .profile-filter-links {
+        display: block;
+        width: 100%;
+    }
+
+
+
+    .plz-user-profile-details td:first-child {
+        width: auto;
+    }
+
+    .numbers-bottom {
+        font-size: 12px;
+        max-width: 80px;
+    }
+
+
+    //.plz-community-subscribe {
+    //    width: 100%;
+    //}
+
+    .plz-community-header-details-text {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .plizi-sr-item-body {
+        width: 100%;
+    }
+    .plizi-sr-item .plizi-community-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .ForDevelopersPage,
+    .AdvertisementPage,
+    .RulesPage,
+    .AboutPage {
+
+        .plz-guest-navbar {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+
+}

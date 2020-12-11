@@ -1,0 +1,214 @@
+$postPosterPicSize: 48px;
+
+.plz-profile-user {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    color: #363636;
+    font-family: OpenSans-Light, sans-serif;
+    font-size: 13px;
+}
+
+.plz-post-item, .profile-photos, .grid-gallery {
+    .post-poster-pic {
+        position: relative;
+        display: inline-block;
+        width: $postPosterPicSize;
+        min-width: $postPosterPicSize;
+        max-width: $postPosterPicSize;
+        height: $postPosterPicSize;
+        min-height: $postPosterPicSize;
+        max-height: $postPosterPicSize;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: $postPosterPicSize;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 100%;
+            width: auto;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .post-poster-title a {
+        font-size: 13px;
+        font-weight: 800;
+        color: #363636;
+    }
+    .post-poster-time {
+        font-size: 13px;
+        font-weight: 400;
+        color: #9a9a9a;
+        text-transform: capitalize;
+    }
+
+    .post-main-text {
+        color: $postTextColor;
+        font-weight: 300;
+        word-break: break-word;
+
+        a {
+            color: $postTextColor;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        img {
+            width: 600px;
+            max-width: 100%;
+        }
+    }
+
+    .post-pictures-list {
+        max-width: 100%;
+        height: max-content;
+
+        .post-picture-pic {
+            .post-picture-img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                max-height: 100%;
+            }
+        }
+
+        .post-picture-main {
+            width: 70%;
+            height: max-content;
+        }
+
+        .post-picture-aux {
+            width: 25%;
+            height: max-content;
+        }
+    }
+
+    .post-watched-counter {
+        position: relative;
+        font-size: 13px;
+        line-height: 17px;
+        color: $postCounterColor;
+        transition: .4s;
+
+        &:hover {
+            color: $postTextColor;
+            cursor: pointer;
+
+            .icon-eye,
+            .icon-message,
+            .icon-share{
+                fill: $iconHoverColor;
+            }
+
+            .usersLikes {
+                opacity: 1;
+                z-index: 999;
+                transition: 0s;
+            }
+
+            .icon-heard {
+                fill: $counterInfoColor;
+            }
+        }
+
+        &.is-active {
+            .icon-message,
+            .icon-share {
+                fill: $iconHoverColor;
+            }
+            span {
+                color: $postTextColor;
+            }
+
+            .icon-heard {
+                fill: $counterInfoColor;
+
+                & + span {
+                    color: $counterInfoColor;
+                }
+            }
+        }
+
+        .usersLikes {
+            position: absolute;
+            top: 0;
+            width: 250px;
+            height: 77px;
+            opacity: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            transform: translate(0%, -110%);
+            border-radius: 20px;
+            z-index: -1;
+            transition: 0s .5s;
+            cursor: auto;
+            color: #fff;
+
+            &-user {
+                position: relative;
+                width: 30px;
+                height: 30px;
+
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    min-height: 30px;
+                    height: 30px;
+                    min-width: 30px;
+                }
+            }
+        }
+    }
+
+    .plz-post-item-footer {
+        .icon-eye,
+        .icon-message,
+        .icon-heard,
+        .icon-share{
+            width: auto;
+            height: 17px;
+            margin: 0 .25rem;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.post-repost {
+    border-left: 2px solid #cececf;
+}
+
+.post-like-body {
+    &-box {
+        p {
+            word-break: keep-all;
+        }
+    }
+    &-pic {
+        position: relative;
+        width: 100%;
+        //min-width: 100px;
+        //height: 100px;
+        height: 0;
+        padding-top: 100%;
+        margin: auto auto 0 auto;
+    }
+    &-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+    }
+}

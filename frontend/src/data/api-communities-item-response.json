@@ -1,0 +1,85 @@
+{
+    "id": 1,
+    "name": "Между тем три.",
+    "notice": "Издали послышался.",
+    "primaryImage": "https://lorempixel.com/640/480/people/",
+    "url": "",
+    "website": "http://doronin.com/",
+    "location": "Лотошино, Суринам",
+    "totalUsers": 704,
+    "role": null,
+    "members": {
+        "list": [
+            {
+                "id": "5eafb04e7ee1180281337a81",
+                "isOnline": false,
+                "role": "user",
+                "profile": {
+                    "firstName": "Марианка",
+                    "lastName": "Кабанова",
+                    "sex": "n",
+                    "birthday": "1967-05-14",
+                    "location": null,
+                    "relationshipId": null,
+                    "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/Sx3zRic44zm2mPiMUahypL3hlKw8SuwBsKtm11Jb.png"
+                }
+            },
+            {
+                "id": "5eafb04e7ee1180281337a82",
+                "isOnline": false,
+                "role": "author",
+                "profile": {
+                    "firstName": "Полина",
+                    "lastName": "Дорожинa",
+                    "sex": "n",
+                    "birthday": "1956-05-10",
+                    "location": null,
+                    "relationshipId": null,
+                    "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/SItquBplqCQoH6JmpNN6FchszxNfOcaZQl2ZkV9e.png"
+                }
+            },
+            {
+                "id": "5eafb04e7ee1180281337a83",
+                "isOnline": false,
+                "role": "user",
+                "profile": {
+                    "firstName": "Виктория",
+                    "lastName": "Мамонтовa",
+                    "sex": "n",
+                    "birthday": "1963-09-07",
+                    "location": null,
+                    "relationshipId": null,
+                    "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/yT02AkTe3lJH0HGvvY8Y028LGVxaKUqz9rW40S6o.jpeg"
+                }
+            },
+            {
+                "id": "5eafb04e7ee1180281337a84",
+                "isOnline": false,
+                "role": "user",
+                "profile": {
+                    "firstName": "Алёна",
+                    "lastName": "Евсеевa",
+                    "sex": "n",
+                    "birthday": "1973-04-20",
+                    "location": null,
+                    "relationshipId": null,
+                    "userPic": "https://i.picsum.photos/id/345/500/500.jpg"
+                }
+            },
+            {
+                "id": "5eafb04e7ee1180281337a85",
+                "isOnline": false,
+                "role": "user",
+                "profile": {
+                    "firstName": "Никодим",
+                    "lastName": "Соколов",
+                    "sex": "m",
+                    "birthday": "1951-12-05",
+                    "location": null,
+                    "relationshipId": null,
+                    "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/FbC98UtLAAkJa4Go8BbqXgAUaCnRx2VjmKohwW6V.png"
+                }
+            }
+        ]
+    }
+}

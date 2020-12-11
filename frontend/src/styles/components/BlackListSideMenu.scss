@@ -1,0 +1,22 @@
+
+
+$titleColor: #363636;
+
+#blackListSideMenu {
+    .list-group-item {
+        color: $textGreyColor;
+        font-size: 13px;
+
+        &.active,
+        &:hover {
+            background-color: #dae4ee;
+            color: $titleColor;
+        }
+        &.active {
+            font-weight: 600;
+            z-index: 0;
+        }
+    }
+
+
+}

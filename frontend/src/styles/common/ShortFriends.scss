@@ -1,0 +1,100 @@
+
+$picSize: 42px;
+
+.plz-short-friends {
+    .plz-short-friends-item {
+        cursor: pointer;
+        transition: .4s;
+        &:hover {
+            background-color: #dae4ee;
+        }
+
+        &.active {
+            border-radius: 20px 20px 20px 0;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+            margin-left: 3px!important;
+            margin-right: 3px!important;
+        }
+    }
+
+    .plz-short-friend-userpic {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: $picSize;
+        min-width: $picSize;
+        height: $picSize;
+        margin-right: 20px;
+
+        img {
+            width: $picSize;
+            height: $picSize;
+        }
+    }
+
+    .plz-short {
+        &-isonline {
+            display: block;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            right: 0;
+            bottom: 0;
+            background-color: #9fcd48;
+            border: 1px solid #fff;
+            border-radius: 100%;
+        }
+        &-isoffline {
+            display: block;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            right: 0;
+            bottom: 0;
+            background-color: #cacac9;
+            border: 1px solid #fff;
+            border-radius: 100%;
+        }
+        &-friend-name {
+            font-size: 13px;
+            color: #50535e;
+        }
+        &-friend-status {
+            display: flex;
+            align-items: center;
+        }
+        &-friend-status p {
+            color: #acaeb7;
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+    }
+
+    .plz-short-friend-is-active {
+        cursor: pointer;
+    }
+    .plz-sf-title .plz-sf-subtitle {
+        display: inline-block;
+    }
+    .plz-sf-subtitle {
+        color: #9a9a9a;
+        font-size: 12px;
+    }
+
+    .plz-short-friend-is-active {
+        font-size: 14px;
+        color: #c5c8d1;
+        transition: .4s;
+
+        &:hover {
+            color: #576df6;
+        }
+    }
+
+    .plz-short-friend-is-active {
+        .icon-message {
+            width: 17px;
+            height: 17px;
+        }
+    }
+}

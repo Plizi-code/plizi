@@ -1,0 +1,123 @@
+{
+    "id": 4181,
+    "firstName": "Alex",
+    "lastName": "Dnipro Bashmakow",
+    "userPic": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/images\/originals\/iJFrjNuVavlwFDN6saHLiweMY6Pdz16wCAU6uRza.jpeg",
+    "sex": "n",
+    "body": "<p>11-46<\/p>",
+    "isMine": true,
+    "isRead": null,
+    "isEdited": false,
+    "createdAt": 1587718017,
+    "updatedAt": 1587718017,
+    "attachments": {
+        "list": []
+    },
+    "replyOn": {
+        "id": 4179,
+        "firstName": "Alex",
+        "lastName": "Dnipro Bashmakow",
+        "userPic": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/images\/originals\/iJFrjNuVavlwFDN6saHLiweMY6Pdz16wCAU6uRza.jpeg",
+        "userId": null,
+        "chatId": 366,
+        "sex": "n",
+        "body": "<p>\u0442\u0435\u0441\u0442 \u043a\u0430\u0440\u0442\u0438\u043d\u043e\u043a<\/p>",
+        "isMine": false,
+        "isRead": null,
+        "isEdited": false,
+        "createdAt": 1586962792,
+        "updatedAt": 1587045852,
+        "attachments": {
+            "list": [
+                {
+                    "id": 101,
+                    "originalName": "krasivye-devushki-i-ix-prityagatelnye-formy-1.jpg",
+                    "url": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/chat\/attachments\/originals\/JIVGqjbKpUTVDj9ogGAxNw8GpJqWfduFzcKz03Xp.jpeg",
+                    "mimeType": "image\/jpeg",
+                    "size": 310506,
+                    "image": {
+                        "original": {
+                            "width": 1000,
+                            "height": 1250,
+                            "path": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/chat\/attachments\/originals\/JIVGqjbKpUTVDj9ogGAxNw8GpJqWfduFzcKz03Xp.jpeg"
+                        },
+                        "normal": {
+                            "width": 480,
+                            "height": 600,
+                            "path": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/chat\/attachments\/normals\/82024f58-84a2-471a-a34f-0eeebb870e84.jpg"
+                        },
+                        "medium": {
+                            "width": 200,
+                            "height": 250,
+                            "path": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/chat\/attachments\/mediums\/82024f58-84a2-471a-a34f-0eeebb870e84.jpg"
+                        },
+                        "thumb": {
+                            "width": 48,
+                            "height": 60,
+                            "path": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/chat\/attachments\/thumbs\/82024f58-84a2-471a-a34f-0eeebb870e84.jpg"
+                        }
+                    }
+                },
+                {
+                    "id": 102,
+                    "originalName": "previewfile_1886877404.png",
+                    "url": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/chat\/attachments\/originals\/PIbDcCnyOwkb2JsQcHKgKuLGY80xIPnvAQNfIdnr.png",
+                    "mimeType": "image\/png",
+                    "size": 153393,
+                    "image": {
+                        "original": {
+                            "width": 512,
+                            "height": 512,
+                            "path": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/chat\/attachments\/originals\/PIbDcCnyOwkb2JsQcHKgKuLGY80xIPnvAQNfIdnr.png"
+                        },
+                        "normal": {
+                            "width": 512,
+                            "height": 512,
+                            "path": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/chat\/attachments\/normals\/39467b41-2c21-41cf-9730-09ce0665654c.png"
+                        },
+                        "medium": {
+                            "width": 250,
+                            "height": 250,
+                            "path": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/chat\/attachments\/mediums\/39467b41-2c21-41cf-9730-09ce0665654c.png"
+                        },
+                        "thumb": {
+                            "width": 60,
+                            "height": 60,
+                            "path": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/chat\/attachments\/thumbs\/39467b41-2c21-41cf-9730-09ce0665654c.png"
+                        }
+                    }
+                },
+                {
+                    "id": 103,
+                    "originalName": "sobor-collection.png",
+                    "url": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/chat\/attachments\/originals\/CtvxARWOohUmRVPXHuWRcLmlMM1fa5OekmHCoBaS.png",
+                    "mimeType": "image\/png",
+                    "size": 148308,
+                    "image": {
+                        "original": {
+                            "width": 640,
+                            "height": 640,
+                            "path": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/chat\/attachments\/originals\/CtvxARWOohUmRVPXHuWRcLmlMM1fa5OekmHCoBaS.png"
+                        },
+                        "normal": {
+                            "width": 600,
+                            "height": 600,
+                            "path": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/chat\/attachments\/normals\/43eb7454-d813-452c-a799-9010a9023b9c.png"
+                        },
+                        "medium": {
+                            "width": 250,
+                            "height": 250,
+                            "path": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/chat\/attachments\/mediums\/43eb7454-d813-452c-a799-9010a9023b9c.png"
+                        },
+                        "thumb": {
+                            "width": 60,
+                            "height": 60,
+                            "path": "https:\/\/plizi.s3.eu-north-1.amazonaws.com\/chat\/attachments\/thumbs\/43eb7454-d813-452c-a799-9010a9023b9c.png"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "isForward": true
+}

@@ -1,0 +1,56 @@
+{
+    "data": {
+        "id": 40,
+        "email": "targettius@ukr.net",
+        "isOnline": true,
+        "lastActivity": 1588422999,
+        "profile": {
+            "firstName": "Alex",
+            "lastName": "Dnipro Bashmakow",
+            "sex": "n",
+            "birthday": "1976-02-01",
+            "location": {
+                "id": 1509378,
+                "title": {
+                    "ru": "Александровка",
+                    "ua": "Александровка",
+                    "en": "Александровка"
+                },
+                "region": {
+                    "id": 1508808,
+                    "title": {
+                        "ru": "Одесская область",
+                        "ua": "Одеська область",
+                        "en": "Одесская область"
+                    }
+                },
+                "country": {
+                    "id": 2,
+                    "title": {
+                        "ru": "Украина",
+                        "ua": "Україна",
+                        "en": "Ukraine"
+                    }
+                }
+            },
+            "relationshipId": null,
+            "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/iJFrjNuVavlwFDN6saHLiweMY6Pdz16wCAU6uRza.jpeg"
+        },
+        "privacySettings": {
+            "pageType": 2,
+            "writeMessagesPermissions": 2,
+            "postWallPermissions": 2,
+            "viewWallPermissions": 2,
+            "viewFriendsPermissions": 2,
+            "twoFactorAuthEnabled": 0,
+            "smsConfirm": 0
+        },
+        "stats": {
+            "notificationsCount": 62,
+            "unreadMessagesCount": 0,
+            "pendingFriendshipRequestsCount": 0,
+            "totalFriendsCount": 14
+        }
+    },
+    "channel": "727010efa75e3d0584fbb59c1754be1288867226"
+}

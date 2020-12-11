@@ -1,0 +1,88 @@
+.plz-potential-friends {
+    .plz-potential-friend-title {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .plz-potential-friends-item {
+        transition: .4s;
+    }
+
+    .plz-potential-friends-item:hover {
+        background-color: #dae4ee;
+    }
+
+    .plz-potential-friend{
+        &-userpic {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            width: 42px;
+            min-width: 42px;
+            height: 42px;
+            margin-right: 20px;
+
+            img {
+                width: 42px;
+                height: 42px;
+            }
+        }
+        &-is-active {
+            cursor: pointer;
+            font-size: 14px;
+            color: #c5c8d1;
+            transition: .4s;
+
+            &:hover {
+                color: #576df6;
+            }
+
+            .icon-message {
+                width: 17px;
+                height: 17px;
+            }
+
+            .icon-add-user {
+                display: inline-block;
+                vertical-align: top;
+                height: 16px;
+            }
+        }
+
+        &-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: #50535e;
+        }
+        &-status {
+            display: flex;
+            align-items: center;
+        }
+        &-status p {
+            color: #acaeb7;
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+.plz-potential {
+    &-isonline,
+    &-isoffline {
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: 0;
+        bottom: 0;
+        background-color: #9fcd48;
+        border: 1px solid #fff;
+        border-radius: 100%;
+    }
+    &-isoffline {
+        background-color: #cacac9;
+    }
+}
+

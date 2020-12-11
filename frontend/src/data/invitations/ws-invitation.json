@@ -1,0 +1,17 @@
+{
+    "id": "caf563f3-9c3f-4bdb-886f-0109b8dbc2a1",
+    "data": {
+        "sender": {
+            "firstName": "Виль",
+            "lastName": "Кузьмин",
+            "sex": "m",
+            "userPic": "https://plizibuck.s3.eu-central-1.amazonaws.com/images/originals/thumbs/4a8ce0a2-7650-4b7f-b804-fa5c23819114.jpg",
+            "lastActivity": 1589511913,
+            "id": "5eb3f2fc5566227d7440cce6"
+        },
+        "body": "User {0, string} sent you friend request",
+        "notificationType": "friendships.sent"
+    },
+    "readAt": null,
+    "createdAt": 1589511923
+}

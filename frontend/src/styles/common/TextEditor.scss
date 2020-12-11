@@ -1,0 +1,170 @@
+$EditorUserPicSize: 32px;
+
+.plz-text-editor, .chat-footer {
+
+    .chat-companion-user-pic {
+        width: $EditorUserPicSize;
+        height: $EditorUserPicSize;
+        min-width: $EditorUserPicSize;
+    }
+
+    .editor-content {
+        padding: 6px 4px;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    &-form {
+        border-color: $borderColor;
+        position: relative;
+    }
+
+    .editor-counter {
+        position: absolute;
+        bottom: 0;
+        right: 3px;
+        opacity: 0.6;
+        user-select: none;
+        font-size: 11px;
+    }
+
+    .menubar {
+        .btn {
+            i {
+                color: #1554F7;
+            }
+        }
+    }
+    .placeholder {
+        font-size: .8rem;
+        color: $grey;
+    }
+}
+.editor-content {
+    //height: 100%;
+
+    .ProseMirror {
+        //height: 100%;
+        outline: none;
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+$editorSize: 48px;
+.plz-editor {
+    width: $editorSize;
+    height: $editorSize;
+    min-width: $editorSize;
+    border-radius: $editorSize;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: auto;
+        transform: translate(-50%, -50%);
+    }
+
+    &-body {
+        width: calc(100% - 95px);
+    }
+
+    &-btns {
+        width: 80px;
+        margin-left: 15px;
+
+        .btn-add-file,
+        .btn-add-smile {
+            height: 50px;
+        }
+    }
+}
+
+// TODO: @veremey Нужно перепроверить
+#messageToUserFromHisPage {
+    .col-10 {
+        max-width: calc(100% - 150px);
+    }
+    .col-2 {
+        min-width: 120px;
+    }
+}
+
+.plz-attachment-images {
+    .plz-attachment-images-list {
+        img {
+            height: 50px;
+            min-width: 55px;
+            max-width: 60px;
+        }
+    }
+    .media {
+        position: relative;
+
+        &:hover {
+            .btn-close {
+                opacity: 1;
+            }
+        }
+
+        .fa,
+        .fas {
+            color: #97a0ad;
+        }
+
+        &__spinner {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            padding: 0!important;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+            .text-center {
+                position: absolute;
+                padding: 0!important;
+                top: 15px;
+                left: 50%;
+                transform: translate(-50%,0%);
+            }
+            .text-info {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .btn-close {
+        position: absolute;
+        top: -5px;
+        left: 100%;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        padding: 4px;
+        border: 0;
+        background-color: #ef482c;
+        font-size: 10px;
+        color: #fff;
+        border-radius: 100%;
+        transform: translate(-60%, 0%) rotate(45deg);
+        transition: 0.4s;
+        z-index: 1;
+        opacity: 0;
+        .fa,
+        .fas {
+            color: #ffffff;
+        }
+    }
+}
+
+.forward-attach-width {
+    .btn {
+        height: 50px;
+    }
+}

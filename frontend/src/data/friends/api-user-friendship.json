@@ -1,0 +1,39 @@
+{
+    "data": {
+        "list": [
+            {
+                "id": "5eb3f2dd5566227d7440cc81",
+                "isOnline": false,
+                "lastActivity": 1589835732,
+                "profile": {
+                    "firstName": "Марианка",
+                    "lastName": "Кабанова",
+                    "sex": "f",
+                    "birthday": "1990-12-16",
+                    "location": {},
+                    "relationshipId": 3,
+                    "userPic": "https:...",
+                    "avatar": {}
+                },
+                "mutualFriendsCount": 0
+            },
+            {
+                "id": "5eb41581e0c4d15990213d32",
+                "isOnline": true,
+                "lastActivity": 1589858818,
+                "profile": {
+                    "firstName": "Alex",
+                    "lastName": "Targa",
+                    "sex": "m",
+                    "birthday": "1976-02-02",
+                    "location": {},
+                    "relationshipId": 1,
+                    "userPic": "https:...",
+                    "avatar": {}
+                },
+                "mutualFriendsCount": 0
+            }
+        ],
+        "totalCount": 2
+    }
+}

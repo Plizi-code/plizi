@@ -1,0 +1,55 @@
+upstream fastcgi_php {
+    server yii2_fpm:9000 weight=100;
+}
+
+
+server {
+    charset utf-8;
+    client_max_body_size 128M;
+
+    listen 80; ## listen for ipv4
+    #listen [::]:80 default_server ipv6only=on; ## listen for ipv6
+
+    server_name plizi-dev.com;
+    root        /var/www/vhosts/edi/web;
+    index       index.php index.html;
+
+    access_log  /var/log/nginx/edi-access.log;
+    error_log   /var/log/nginx/edi-error.log;
+
+    location / {
+        # Redirect everything that isn't a real file to index.php
+        try_files $uri $uri/ /index.php?$args;
+    }
+
+    # uncomment to avoid processing of calls to non-existing static files by Yii
+    location ~ \.(js|css|png|jpg|gif|swf|ico|pdf|mov|fla|zip|rar)$ {
+        try_files $uri =404;
+	expires 30d;
+        access_log off;
+        add_header Pragma public;
+        add_header Cache-Control "public";
+    }
+    #error_page 404 /404.html;
+
+    location ~ ^/assets/.*\.php$ {
+        deny all;
+    }
+
+    location ~ \.php$ {
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+
+        fastcgi_pass fastcgi_php;
+
+        try_files $uri =404;
+    }
+
+    location ~ /\.(ht|svn|git) {
+        deny all;
+    }
+
+    location ~* /\. {
+        deny all;
+    }
+}

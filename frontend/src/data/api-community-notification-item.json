@@ -1,0 +1,15 @@
+{
+    "id": "ad15bd39-35e7-40b0-8111-2308d3fb1860",
+    "data": {
+        "community": {
+            "name": "Так как.",
+            "primaryImage": "https://lorempixel.com/640/480/people/",
+            "id": 1,
+            "postId": 512
+        },
+        "body": "There is new post in community {0, string}",
+        "notificationType": "community.post.created"
+    },
+    "readAt": null,
+    "createdAt": 1589018904
+}

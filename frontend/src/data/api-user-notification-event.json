@@ -1,0 +1,17 @@
+{
+    "data": {
+        "sender": {
+            "firstName": "Виктория",
+            "lastName": "Мамонтовa",
+            "sex": "f",
+            "userPic": "https://plizi.s3.eu-north-1.amazonaws.com/images/originals/X3aTqvRiEBwxm2JcnzlGmqI7JrSfXJJIYwGxUf5q.png",
+            "lastActivity": 1588461715,
+            "id": 3
+        },
+        "body": "User {0, string} updated profile photo",
+        "notificationType": "user.profile.image.updated"
+    },
+    "id": 1588462556797,
+    "createdAt": 1588462556797,
+    "readAt": null
+}
